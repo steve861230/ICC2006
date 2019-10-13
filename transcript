@@ -1,0 +1,2752 @@
+# Reading C:/modeltech64_10.1c/tcl/vsim/pref.tcl 
+# //  ModelSim SE-64 10.1c Jul 28 2012 
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# OpenFile {C:/Users/USER/Desktop/ic design/ICC 2006/triangle.mpf} 
+# Loading project triangle
+vsim +notimingchecks -gui -novopt work.test
+# vsim +notimingchecks -gui -novopt work.test 
+# Loading work.test
+# Loading work.triangle
+add wave -position insertpoint sim:/test/top/*
+run -all
+# ** Error: (vsim-PLI-3826) C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(40): $dumpfile : This task should be called prior to the $dumpvars
+# 
+# task.  The $dumpfile task will be ignored.
+# 
+#         Region: /test/top
+# 
+# ****** START to VERIFY the Triangel Rendering Enginen OPERATION ******
+# 
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(4, 1)
+# (x3, y3)=(1, 7)
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(7, 1)
+# (x3, y3)=(1, 3)
+# ERROR at           0:xo=(3) yo=(5)!=expect xo=(1), yo=(1)
+# ERROR at           1:xo=(4) yo=(5)!=expect xo=(2), yo=(1)
+# ERROR at           2:xo=(5) yo=(5)!=expect xo=(3), yo=(1)
+# ERROR at           3:xo=(6) yo=(5)!=expect xo=(4), yo=(1)
+# ERROR at           4:xo=(7) yo=(5)!=expect xo=(1), yo=(2)
+# ERROR at           5:xo=(0) yo=(5)!=expect xo=(2), yo=(2)
+# ERROR at           6:xo=(1) yo=(5)!=expect xo=(3), yo=(2)
+# ERROR at           7:xo=(2) yo=(5)!=expect xo=(1), yo=(3)
+# ERROR at           8:xo=(3) yo=(5)!=expect xo=(2), yo=(3)
+# ERROR at           9:xo=(4) yo=(5)!=expect xo=(3), yo=(3)
+# ERROR at          10:xo=(5) yo=(5)!=expect xo=(1), yo=(4)
+# ERROR at          11:xo=(6) yo=(5)!=expect xo=(2), yo=(4)
+# ERROR at          12:xo=(7) yo=(5)!=expect xo=(1), yo=(5)
+# ERROR at          13:xo=(0) yo=(5)!=expect xo=(2), yo=(5)
+# ERROR at          14:xo=(1) yo=(5)!=expect xo=(1), yo=(6)
+# ERROR at          15:xo=(2) yo=(5)!=expect xo=(1), yo=(7)
+# ERROR at          16:xo=(3) yo=(5)!=expect xo=(1), yo=(1)
+# ERROR at          17:xo=(4) yo=(5)!=expect xo=(2), yo=(1)
+# ERROR at          18:xo=(5) yo=(5)!=expect xo=(3), yo=(1)
+# ERROR at          19:xo=(6) yo=(5)!=expect xo=(4), yo=(1)
+# ERROR at          20:xo=(7) yo=(5)!=expect xo=(5), yo=(1)
+# ERROR at          21:xo=(0) yo=(5)!=expect xo=(6), yo=(1)
+# ERROR at          22:xo=(1) yo=(5)!=expect xo=(7), yo=(1)
+# ERROR at          23:xo=(2) yo=(5)!=expect xo=(1), yo=(2)
+# ERROR at          24:xo=(3) yo=(5)!=expect xo=(2), yo=(2)
+# ERROR at          25:xo=(4) yo=(5)!=expect xo=(3), yo=(2)
+# ERROR at          26:xo=(5) yo=(5)!=expect xo=(4), yo=(2)
+# ERROR at          27:xo=(6) yo=(5)!=expect xo=(1), yo=(3)
+# ---------------------------------------------
+# There are          28 errors!
+# ---------------------------------------------
+# ---------------------------------------------
+# Total delay:       75000 ns
+# ---------------------------------------------
+# ** Note: $finish    : C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(146)
+#    Time: 7700 ns  Iteration: 1  Instance: /test
+# 1
+# Break in Module test at C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v line 146
+# Compile of testfixture.v was successful.
+# Compile of triangle.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart -f
+# Closing VCD file "dump.vcd"
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.test
+# Loading work.test
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.triangle
+# Loading work.triangle
+run -all
+# ** Error: (vsim-PLI-3826) C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(40): $dumpfile : This task should be called prior to the $dumpvars
+# 
+# task.  The $dumpfile task will be ignored.
+# 
+#         Region: /test
+# 
+# ****** START to VERIFY the Triangel Rendering Enginen OPERATION ******
+# 
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(4, 1)
+# (x3, y3)=(1, 7)
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(7, 1)
+# (x3, y3)=(1, 3)
+# ERROR at           0:xo=(6) yo=(2)!=expect xo=(1), yo=(1)
+# ERROR at           1:xo=(7) yo=(2)!=expect xo=(2), yo=(1)
+# ERROR at           2:xo=(0) yo=(2)!=expect xo=(3), yo=(1)
+# ERROR at           3:xo=(1) yo=(2)!=expect xo=(4), yo=(1)
+# ERROR at           4:xo=(2) yo=(2)!=expect xo=(1), yo=(2)
+# ERROR at           5:xo=(3) yo=(2)!=expect xo=(2), yo=(2)
+# ERROR at           6:xo=(4) yo=(2)!=expect xo=(3), yo=(2)
+# ERROR at           7:xo=(2) yo=(4)!=expect xo=(1), yo=(3)
+# ERROR at           8:xo=(3) yo=(4)!=expect xo=(2), yo=(3)
+# ERROR at           9:xo=(4) yo=(4)!=expect xo=(3), yo=(3)
+# ERROR at          10:xo=(5) yo=(4)!=expect xo=(1), yo=(4)
+# ERROR at          11:xo=(6) yo=(4)!=expect xo=(2), yo=(4)
+# ERROR at          12:xo=(7) yo=(4)!=expect xo=(1), yo=(5)
+# ERROR at          13:xo=(0) yo=(4)!=expect xo=(2), yo=(5)
+# ERROR at          14:xo=(1) yo=(4)!=expect xo=(1), yo=(6)
+# ERROR at          15:xo=(2) yo=(4)!=expect xo=(1), yo=(7)
+# ERROR at          16:xo=(3) yo=(4)!=expect xo=(1), yo=(1)
+# ERROR at          17:xo=(4) yo=(4)!=expect xo=(2), yo=(1)
+# ERROR at          18:xo=(5) yo=(4)!=expect xo=(3), yo=(1)
+# ERROR at          19:xo=(6) yo=(4)!=expect xo=(4), yo=(1)
+# ERROR at          20:xo=(7) yo=(4)!=expect xo=(5), yo=(1)
+# ERROR at          21:xo=(0) yo=(4)!=expect xo=(6), yo=(1)
+# ERROR at          22:xo=(1) yo=(4)!=expect xo=(7), yo=(1)
+# ERROR at          23:xo=(2) yo=(4)!=expect xo=(1), yo=(2)
+# ERROR at          24:xo=(3) yo=(4)!=expect xo=(2), yo=(2)
+# ERROR at          25:xo=(4) yo=(4)!=expect xo=(3), yo=(2)
+# ERROR at          26:xo=(5) yo=(4)!=expect xo=(4), yo=(2)
+# ERROR at          27:xo=(6) yo=(4)!=expect xo=(1), yo=(3)
+# ---------------------------------------------
+# There are          28 errors!
+# ---------------------------------------------
+# ---------------------------------------------
+# Total delay:       68000 ns
+# ---------------------------------------------
+# ** Note: $finish    : C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(146)
+#    Time: 7 us  Iteration: 1  Instance: /test
+# 1
+# Break in Module test at C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v line 146
+# Compile of testfixture.v was successful.
+# Compile of triangle.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart -f
+# Closing VCD file "dump.vcd"
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.test
+# Loading work.test
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.triangle
+# Loading work.triangle
+run -all
+# ** Error: (vsim-PLI-3826) C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(40): $dumpfile : This task should be called prior to the $dumpvars
+# 
+# task.  The $dumpfile task will be ignored.
+# 
+#         Region: /test
+# 
+# ****** START to VERIFY the Triangel Rendering Enginen OPERATION ******
+# 
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(4, 1)
+# (x3, y3)=(1, 7)
+# ERROR at           0:xo=(2) yo=(3)!=expect xo=(1), yo=(1)
+# ERROR at           1:xo=(3) yo=(3)!=expect xo=(2), yo=(1)
+# ERROR at           2:xo=(4) yo=(3)!=expect xo=(3), yo=(1)
+# ERROR at           3:xo=(5) yo=(3)!=expect xo=(4), yo=(1)
+# ERROR at           4:xo=(6) yo=(3)!=expect xo=(1), yo=(2)
+# ERROR at           5:xo=(2) yo=(4)!=expect xo=(2), yo=(2)
+# ERROR at           6:xo=(3) yo=(4)!=expect xo=(3), yo=(2)
+# ERROR at           7:xo=(4) yo=(4)!=expect xo=(1), yo=(3)
+# ERROR at           8:xo=(5) yo=(4)!=expect xo=(2), yo=(3)
+# ERROR at           9:xo=(6) yo=(4)!=expect xo=(3), yo=(3)
+# ERROR at          10:xo=(7) yo=(4)!=expect xo=(1), yo=(4)
+# ERROR at          11:xo=(2) yo=(5)!=expect xo=(2), yo=(4)
+# ERROR at          12:xo=(3) yo=(5)!=expect xo=(1), yo=(5)
+# ERROR at          13:xo=(4) yo=(5)!=expect xo=(2), yo=(5)
+# ERROR at          14:xo=(5) yo=(5)!=expect xo=(1), yo=(6)
+# ERROR at          15:xo=(6) yo=(5)!=expect xo=(1), yo=(7)
+# ERROR at          16:xo=(7) yo=(5)!=expect xo=(1), yo=(1)
+# ERROR at          17:xo=(0) yo=(5)!=expect xo=(2), yo=(1)
+# ERROR at          18:xo=(2) yo=(6)!=expect xo=(3), yo=(1)
+# ERROR at          19:xo=(3) yo=(6)!=expect xo=(4), yo=(1)
+# ERROR at          20:xo=(4) yo=(6)!=expect xo=(5), yo=(1)
+# ERROR at          21:xo=(5) yo=(6)!=expect xo=(6), yo=(1)
+# ERROR at          22:xo=(6) yo=(6)!=expect xo=(7), yo=(1)
+# ERROR at          23:xo=(7) yo=(6)!=expect xo=(1), yo=(2)
+# ERROR at          24:xo=(0) yo=(6)!=expect xo=(2), yo=(2)
+# ERROR at          25:xo=(1) yo=(6)!=expect xo=(3), yo=(2)
+# ERROR at          26:xo=(2) yo=(7)!=expect xo=(4), yo=(2)
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(7, 1)
+# (x3, y3)=(1, 3)
+# ERROR at          27:xo=(2) yo=(3)!=expect xo=(1), yo=(3)
+# ---------------------------------------------
+# There are          28 errors!
+# ---------------------------------------------
+# ---------------------------------------------
+# Total delay:       89000 ns
+# ---------------------------------------------
+# ** Note: $finish    : C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(146)
+#    Time: 9100 ns  Iteration: 1  Instance: /test
+# 1
+# Break in Module test at C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v line 146
+# Compile of testfixture.v was successful.
+# Compile of triangle.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart -f
+# Closing VCD file "dump.vcd"
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.test
+# Loading work.test
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.triangle
+# Loading work.triangle
+run -all
+# ** Error: (vsim-PLI-3826) C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(40): $dumpfile : This task should be called prior to the $dumpvars
+# 
+# task.  The $dumpfile task will be ignored.
+# 
+#         Region: /test
+# 
+# ****** START to VERIFY the Triangel Rendering Enginen OPERATION ******
+# 
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(4, 1)
+# (x3, y3)=(1, 7)
+# Break key hit 
+# Break in Module test at C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v line 74
+# Compile of testfixture.v was successful.
+# Compile of triangle.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart -f
+# Closing VCD file "dump.vcd"
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.test
+# Loading work.test
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.triangle
+# Loading work.triangle
+run -all
+# ** Error: (vsim-PLI-3826) C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(40): $dumpfile : This task should be called prior to the $dumpvars
+# 
+# task.  The $dumpfile task will be ignored.
+# 
+#         Region: /test
+# 
+# ****** START to VERIFY the Triangel Rendering Enginen OPERATION ******
+# 
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(4, 1)
+# (x3, y3)=(1, 7)
+# ERROR at           0:xo=(2) yo=(3)!=expect xo=(1), yo=(1)
+# ERROR at           1:xo=(3) yo=(3)!=expect xo=(2), yo=(1)
+# ERROR at           2:xo=(4) yo=(3)!=expect xo=(3), yo=(1)
+# ERROR at           3:xo=(5) yo=(3)!=expect xo=(4), yo=(1)
+# ERROR at           4:xo=(6) yo=(3)!=expect xo=(1), yo=(2)
+# ERROR at           5:xo=(2) yo=(4)!=expect xo=(2), yo=(2)
+# ERROR at           6:xo=(3) yo=(4)!=expect xo=(3), yo=(2)
+# ERROR at           7:xo=(4) yo=(4)!=expect xo=(1), yo=(3)
+# ERROR at           8:xo=(5) yo=(4)!=expect xo=(2), yo=(3)
+# ERROR at           9:xo=(6) yo=(4)!=expect xo=(3), yo=(3)
+# ERROR at          10:xo=(7) yo=(4)!=expect xo=(1), yo=(4)
+# ERROR at          11:xo=(2) yo=(5)!=expect xo=(2), yo=(4)
+# ERROR at          12:xo=(3) yo=(5)!=expect xo=(1), yo=(5)
+# ERROR at          13:xo=(4) yo=(5)!=expect xo=(2), yo=(5)
+# ERROR at          14:xo=(5) yo=(5)!=expect xo=(1), yo=(6)
+# ERROR at          15:xo=(6) yo=(5)!=expect xo=(1), yo=(7)
+# ERROR at          16:xo=(7) yo=(5)!=expect xo=(1), yo=(1)
+# ERROR at          17:xo=(0) yo=(5)!=expect xo=(2), yo=(1)
+# ERROR at          18:xo=(2) yo=(6)!=expect xo=(3), yo=(1)
+# ERROR at          19:xo=(3) yo=(6)!=expect xo=(4), yo=(1)
+# ERROR at          20:xo=(4) yo=(6)!=expect xo=(5), yo=(1)
+# ERROR at          21:xo=(5) yo=(6)!=expect xo=(6), yo=(1)
+# ERROR at          22:xo=(6) yo=(6)!=expect xo=(7), yo=(1)
+# ERROR at          23:xo=(7) yo=(6)!=expect xo=(1), yo=(2)
+# ERROR at          24:xo=(0) yo=(6)!=expect xo=(2), yo=(2)
+# ERROR at          25:xo=(1) yo=(6)!=expect xo=(3), yo=(2)
+# ERROR at          26:xo=(2) yo=(7)!=expect xo=(4), yo=(2)
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(7, 1)
+# (x3, y3)=(1, 3)
+# ERROR at          27:xo=(2) yo=(3)!=expect xo=(1), yo=(3)
+# ---------------------------------------------
+# There are          28 errors!
+# ---------------------------------------------
+# ---------------------------------------------
+# Total delay:       91000 ns
+# ---------------------------------------------
+# ** Note: $finish    : C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(146)
+#    Time: 9300 ns  Iteration: 1  Instance: /test
+# 1
+# Break in Module test at C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v line 146
+# Compile of testfixture.v was successful.
+# Compile of triangle.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart -f
+# Closing VCD file "dump.vcd"
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.test
+# Loading work.test
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.triangle
+# Loading work.triangle
+run -all
+# ** Error: (vsim-PLI-3826) C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(40): $dumpfile : This task should be called prior to the $dumpvars
+# 
+# task.  The $dumpfile task will be ignored.
+# 
+#         Region: /test
+# 
+# ****** START to VERIFY the Triangel Rendering Enginen OPERATION ******
+# 
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(4, 1)
+# (x3, y3)=(1, 7)
+# ERROR at           0:xo=(2) yo=(3)!=expect xo=(1), yo=(1)
+# ERROR at           1:xo=(3) yo=(3)!=expect xo=(2), yo=(1)
+# ERROR at           2:xo=(4) yo=(3)!=expect xo=(3), yo=(1)
+# ERROR at           3:xo=(5) yo=(3)!=expect xo=(4), yo=(1)
+# ERROR at           4:xo=(6) yo=(3)!=expect xo=(1), yo=(2)
+# ERROR at           5:xo=(2) yo=(4)!=expect xo=(2), yo=(2)
+# ERROR at           6:xo=(3) yo=(4)!=expect xo=(3), yo=(2)
+# ERROR at           7:xo=(4) yo=(4)!=expect xo=(1), yo=(3)
+# ERROR at           8:xo=(5) yo=(4)!=expect xo=(2), yo=(3)
+# ERROR at           9:xo=(6) yo=(4)!=expect xo=(3), yo=(3)
+# ERROR at          10:xo=(7) yo=(4)!=expect xo=(1), yo=(4)
+# ERROR at          11:xo=(2) yo=(5)!=expect xo=(2), yo=(4)
+# ERROR at          12:xo=(3) yo=(5)!=expect xo=(1), yo=(5)
+# ERROR at          13:xo=(4) yo=(5)!=expect xo=(2), yo=(5)
+# ERROR at          14:xo=(5) yo=(5)!=expect xo=(1), yo=(6)
+# ERROR at          15:xo=(6) yo=(5)!=expect xo=(1), yo=(7)
+# ERROR at          16:xo=(7) yo=(5)!=expect xo=(1), yo=(1)
+# ERROR at          17:xo=(0) yo=(5)!=expect xo=(2), yo=(1)
+# ERROR at          18:xo=(1) yo=(5)!=expect xo=(3), yo=(1)
+# ERROR at          19:xo=(2) yo=(5)!=expect xo=(4), yo=(1)
+# ERROR at          20:xo=(3) yo=(5)!=expect xo=(5), yo=(1)
+# ERROR at          21:xo=(4) yo=(5)!=expect xo=(6), yo=(1)
+# ERROR at          22:xo=(5) yo=(5)!=expect xo=(7), yo=(1)
+# ERROR at          23:xo=(6) yo=(5)!=expect xo=(1), yo=(2)
+# ERROR at          24:xo=(7) yo=(5)!=expect xo=(2), yo=(2)
+# ERROR at          25:xo=(0) yo=(5)!=expect xo=(3), yo=(2)
+# ERROR at          26:xo=(1) yo=(5)!=expect xo=(4), yo=(2)
+# ERROR at          27:xo=(2) yo=(5)!=expect xo=(1), yo=(3)
+# ---------------------------------------------
+# There are          28 errors!
+# ---------------------------------------------
+# ---------------------------------------------
+# Total delay:       71000 ns
+# ---------------------------------------------
+# ** Note: $finish    : C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(146)
+#    Time: 7300 ns  Iteration: 1  Instance: /test
+# 1
+# Break in Module test at C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v line 146
+# Compile of testfixture.v was successful.
+# Compile of triangle.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart -f
+# Closing VCD file "dump.vcd"
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.test
+# Loading work.test
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.triangle
+# Loading work.triangle
+run -all
+# ** Error: (vsim-PLI-3826) C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(40): $dumpfile : This task should be called prior to the $dumpvars
+# 
+# task.  The $dumpfile task will be ignored.
+# 
+#         Region: /test
+# 
+# ****** START to VERIFY the Triangel Rendering Enginen OPERATION ******
+# 
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(4, 1)
+# (x3, y3)=(1, 7)
+# ERROR at           0:xo=(2) yo=(0)!=expect xo=(1), yo=(1)
+# ERROR at           1:xo=(3) yo=(0)!=expect xo=(2), yo=(1)
+# ERROR at           2:xo=(2) yo=(1)!=expect xo=(3), yo=(1)
+# ERROR at           3:xo=(3) yo=(1)!=expect xo=(4), yo=(1)
+# ERROR at           4:xo=(4) yo=(1)!=expect xo=(1), yo=(2)
+# ERROR at           5:xo=(5) yo=(1)!=expect xo=(2), yo=(2)
+# ERROR at           6:xo=(6) yo=(1)!=expect xo=(3), yo=(2)
+# ERROR at           7:xo=(7) yo=(1)!=expect xo=(1), yo=(3)
+# ERROR at           8:xo=(0) yo=(1)!=expect xo=(2), yo=(3)
+# ERROR at           9:xo=(1) yo=(1)!=expect xo=(3), yo=(3)
+# ERROR at          10:xo=(2) yo=(1)!=expect xo=(1), yo=(4)
+# ERROR at          11:xo=(3) yo=(1)!=expect xo=(2), yo=(4)
+# ERROR at          12:xo=(4) yo=(1)!=expect xo=(1), yo=(5)
+# ERROR at          13:xo=(5) yo=(1)!=expect xo=(2), yo=(5)
+# ERROR at          14:xo=(6) yo=(1)!=expect xo=(1), yo=(6)
+# ERROR at          15:xo=(7) yo=(1)!=expect xo=(1), yo=(7)
+# ERROR at          16:xo=(0) yo=(1)!=expect xo=(1), yo=(1)
+# ERROR at          17:xo=(1) yo=(1)!=expect xo=(2), yo=(1)
+# ERROR at          18:xo=(2) yo=(1)!=expect xo=(3), yo=(1)
+# ERROR at          19:xo=(3) yo=(1)!=expect xo=(4), yo=(1)
+# ERROR at          20:xo=(4) yo=(1)!=expect xo=(5), yo=(1)
+# ERROR at          21:xo=(5) yo=(1)!=expect xo=(6), yo=(1)
+# ERROR at          22:xo=(6) yo=(1)!=expect xo=(7), yo=(1)
+# ERROR at          23:xo=(7) yo=(1)!=expect xo=(1), yo=(2)
+# ERROR at          24:xo=(0) yo=(1)!=expect xo=(2), yo=(2)
+# ERROR at          25:xo=(1) yo=(1)!=expect xo=(3), yo=(2)
+# ERROR at          26:xo=(2) yo=(1)!=expect xo=(4), yo=(2)
+# ERROR at          27:xo=(3) yo=(1)!=expect xo=(1), yo=(3)
+# ---------------------------------------------
+# There are          28 errors!
+# ---------------------------------------------
+# ---------------------------------------------
+# Total delay:       95000 ns
+# ---------------------------------------------
+# ** Note: $finish    : C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(146)
+#    Time: 9700 ns  Iteration: 1  Instance: /test
+# 1
+# Break in Module test at C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v line 146
+restart -f
+# Closing VCD file "dump.vcd"
+run -all
+# ** Error: (vsim-PLI-3826) C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(40): $dumpfile : This task should be called prior to the $dumpvars
+# 
+# task.  The $dumpfile task will be ignored.
+# 
+#         Region: /test
+# 
+# ****** START to VERIFY the Triangel Rendering Enginen OPERATION ******
+# 
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(4, 1)
+# (x3, y3)=(1, 7)
+# ERROR at           0:xo=(2) yo=(0)!=expect xo=(1), yo=(1)
+# ERROR at           1:xo=(3) yo=(0)!=expect xo=(2), yo=(1)
+# ERROR at           2:xo=(2) yo=(1)!=expect xo=(3), yo=(1)
+# ERROR at           3:xo=(3) yo=(1)!=expect xo=(4), yo=(1)
+# ERROR at           4:xo=(4) yo=(1)!=expect xo=(1), yo=(2)
+# ERROR at           5:xo=(5) yo=(1)!=expect xo=(2), yo=(2)
+# ERROR at           6:xo=(6) yo=(1)!=expect xo=(3), yo=(2)
+# ERROR at           7:xo=(7) yo=(1)!=expect xo=(1), yo=(3)
+# ERROR at           8:xo=(0) yo=(1)!=expect xo=(2), yo=(3)
+# ERROR at           9:xo=(1) yo=(1)!=expect xo=(3), yo=(3)
+# ERROR at          10:xo=(2) yo=(1)!=expect xo=(1), yo=(4)
+# ERROR at          11:xo=(3) yo=(1)!=expect xo=(2), yo=(4)
+# ERROR at          12:xo=(4) yo=(1)!=expect xo=(1), yo=(5)
+# ERROR at          13:xo=(5) yo=(1)!=expect xo=(2), yo=(5)
+# ERROR at          14:xo=(6) yo=(1)!=expect xo=(1), yo=(6)
+# ERROR at          15:xo=(7) yo=(1)!=expect xo=(1), yo=(7)
+# ERROR at          16:xo=(0) yo=(1)!=expect xo=(1), yo=(1)
+# ERROR at          17:xo=(1) yo=(1)!=expect xo=(2), yo=(1)
+# ERROR at          18:xo=(2) yo=(1)!=expect xo=(3), yo=(1)
+# ERROR at          19:xo=(3) yo=(1)!=expect xo=(4), yo=(1)
+# ERROR at          20:xo=(4) yo=(1)!=expect xo=(5), yo=(1)
+# ERROR at          21:xo=(5) yo=(1)!=expect xo=(6), yo=(1)
+# ERROR at          22:xo=(6) yo=(1)!=expect xo=(7), yo=(1)
+# ERROR at          23:xo=(7) yo=(1)!=expect xo=(1), yo=(2)
+# ERROR at          24:xo=(0) yo=(1)!=expect xo=(2), yo=(2)
+# ERROR at          25:xo=(1) yo=(1)!=expect xo=(3), yo=(2)
+# ERROR at          26:xo=(2) yo=(1)!=expect xo=(4), yo=(2)
+# ERROR at          27:xo=(3) yo=(1)!=expect xo=(1), yo=(3)
+# ---------------------------------------------
+# There are          28 errors!
+# ---------------------------------------------
+# ---------------------------------------------
+# Total delay:       95000 ns
+# ---------------------------------------------
+# ** Note: $finish    : C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(146)
+#    Time: 9700 ns  Iteration: 1  Instance: /test
+# 1
+# Break in Module test at C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v line 146
+# Compile of testfixture.v was successful.
+# Compile of triangle.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart -f
+# Closing VCD file "dump.vcd"
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.test
+# Loading work.test
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.triangle
+# Loading work.triangle
+run -all
+# ** Error: (vsim-PLI-3826) C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(40): $dumpfile : This task should be called prior to the $dumpvars
+# 
+# task.  The $dumpfile task will be ignored.
+# 
+#         Region: /test
+# 
+# ****** START to VERIFY the Triangel Rendering Enginen OPERATION ******
+# 
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(4, 1)
+# (x3, y3)=(1, 7)
+# ERROR at           0:xo=(2) yo=(0)!=expect xo=(1), yo=(1)
+# ERROR at           1:xo=(3) yo=(0)!=expect xo=(2), yo=(1)
+# ERROR at           2:xo=(2) yo=(1)!=expect xo=(3), yo=(1)
+# ERROR at           3:xo=(3) yo=(1)!=expect xo=(4), yo=(1)
+# ERROR at           4:xo=(4) yo=(1)!=expect xo=(1), yo=(2)
+# ERROR at           5:xo=(5) yo=(1)!=expect xo=(2), yo=(2)
+# ERROR at           6:xo=(6) yo=(1)!=expect xo=(3), yo=(2)
+# ERROR at           7:xo=(7) yo=(1)!=expect xo=(1), yo=(3)
+# ERROR at           8:xo=(0) yo=(1)!=expect xo=(2), yo=(3)
+# ERROR at           9:xo=(1) yo=(1)!=expect xo=(3), yo=(3)
+# ERROR at          10:xo=(2) yo=(1)!=expect xo=(1), yo=(4)
+# ERROR at          11:xo=(3) yo=(1)!=expect xo=(2), yo=(4)
+# ERROR at          12:xo=(4) yo=(1)!=expect xo=(1), yo=(5)
+# ERROR at          13:xo=(5) yo=(1)!=expect xo=(2), yo=(5)
+# ERROR at          14:xo=(6) yo=(1)!=expect xo=(1), yo=(6)
+# ERROR at          15:xo=(7) yo=(1)!=expect xo=(1), yo=(7)
+# ERROR at          16:xo=(0) yo=(1)!=expect xo=(1), yo=(1)
+# ERROR at          17:xo=(1) yo=(1)!=expect xo=(2), yo=(1)
+# ERROR at          18:xo=(2) yo=(1)!=expect xo=(3), yo=(1)
+# ERROR at          19:xo=(3) yo=(1)!=expect xo=(4), yo=(1)
+# ERROR at          20:xo=(4) yo=(1)!=expect xo=(5), yo=(1)
+# ERROR at          21:xo=(5) yo=(1)!=expect xo=(6), yo=(1)
+# ERROR at          22:xo=(6) yo=(1)!=expect xo=(7), yo=(1)
+# ERROR at          23:xo=(7) yo=(1)!=expect xo=(1), yo=(2)
+# ERROR at          24:xo=(0) yo=(1)!=expect xo=(2), yo=(2)
+# ERROR at          25:xo=(1) yo=(1)!=expect xo=(3), yo=(2)
+# ERROR at          26:xo=(2) yo=(1)!=expect xo=(4), yo=(2)
+# ERROR at          27:xo=(3) yo=(1)!=expect xo=(1), yo=(3)
+# ---------------------------------------------
+# There are          28 errors!
+# ---------------------------------------------
+# ---------------------------------------------
+# Total delay:       95000 ns
+# ---------------------------------------------
+# ** Note: $finish    : C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(146)
+#    Time: 9700 ns  Iteration: 1  Instance: /test
+# 1
+# Break in Module test at C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v line 146
+# Compile of testfixture.v was successful.
+# Compile of triangle.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart -f
+# Closing VCD file "dump.vcd"
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.test
+# Loading work.test
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.triangle
+# Loading work.triangle
+run -all
+# ** Error: (vsim-PLI-3826) C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(40): $dumpfile : This task should be called prior to the $dumpvars
+# 
+# task.  The $dumpfile task will be ignored.
+# 
+#         Region: /test
+# 
+# ****** START to VERIFY the Triangel Rendering Enginen OPERATION ******
+# 
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(4, 1)
+# (x3, y3)=(1, 7)
+# Compile of testfixture.v was successful.
+# Compile of triangle.v was successful.
+# 2 compiles, 0 failed with no errors. 
+# Break key hit 
+# Break in Module test at C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v line 76
+restart -f
+# Closing VCD file "dump.vcd"
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.test
+# Loading work.test
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.triangle
+# Loading work.triangle
+restart -f
+restart -f
+run -all
+# ** Error: (vsim-PLI-3826) C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(40): $dumpfile : This task should be called prior to the $dumpvars
+# 
+# task.  The $dumpfile task will be ignored.
+# 
+#         Region: /test
+# 
+# ****** START to VERIFY the Triangel Rendering Enginen OPERATION ******
+# 
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(4, 1)
+# (x3, y3)=(1, 7)
+# ERROR at           0:xo=(2) yo=(3)!=expect xo=(1), yo=(1)
+# ERROR at           1:xo=(3) yo=(3)!=expect xo=(2), yo=(1)
+# ERROR at           2:xo=(2) yo=(4)!=expect xo=(3), yo=(1)
+# ERROR at           3:xo=(2) yo=(1)!=expect xo=(4), yo=(1)
+# ERROR at           4:xo=(3) yo=(1)!=expect xo=(1), yo=(2)
+# ERROR at           5:xo=(4) yo=(1)!=expect xo=(2), yo=(2)
+# ERROR at           6:xo=(5) yo=(1)!=expect xo=(3), yo=(2)
+# ERROR at           7:xo=(6) yo=(1)!=expect xo=(1), yo=(3)
+# ERROR at           8:xo=(7) yo=(1)!=expect xo=(2), yo=(3)
+# ERROR at           9:xo=(0) yo=(1)!=expect xo=(3), yo=(3)
+# ERROR at          10:xo=(1) yo=(1)!=expect xo=(1), yo=(4)
+# ERROR at          11:xo=(2) yo=(1)!=expect xo=(2), yo=(4)
+# ERROR at          12:xo=(3) yo=(1)!=expect xo=(1), yo=(5)
+# ERROR at          13:xo=(4) yo=(1)!=expect xo=(2), yo=(5)
+# ERROR at          14:xo=(5) yo=(1)!=expect xo=(1), yo=(6)
+# ERROR at          15:xo=(6) yo=(1)!=expect xo=(1), yo=(7)
+# ERROR at          16:xo=(7) yo=(1)!=expect xo=(1), yo=(1)
+# ERROR at          17:xo=(0) yo=(1)!=expect xo=(2), yo=(1)
+# ERROR at          18:xo=(1) yo=(1)!=expect xo=(3), yo=(1)
+# ERROR at          19:xo=(2) yo=(1)!=expect xo=(4), yo=(1)
+# ERROR at          20:xo=(3) yo=(1)!=expect xo=(5), yo=(1)
+# ERROR at          21:xo=(4) yo=(1)!=expect xo=(6), yo=(1)
+# ERROR at          22:xo=(5) yo=(1)!=expect xo=(7), yo=(1)
+# ERROR at          23:xo=(6) yo=(1)!=expect xo=(1), yo=(2)
+# ERROR at          24:xo=(7) yo=(1)!=expect xo=(2), yo=(2)
+# ERROR at          25:xo=(0) yo=(1)!=expect xo=(3), yo=(2)
+# ERROR at          26:xo=(1) yo=(1)!=expect xo=(4), yo=(2)
+# ERROR at          27:xo=(2) yo=(1)!=expect xo=(1), yo=(3)
+# ---------------------------------------------
+# There are          28 errors!
+# ---------------------------------------------
+# ---------------------------------------------
+# Total delay:       95000 ns
+# ---------------------------------------------
+# ** Note: $finish    : C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(146)
+#    Time: 9700 ns  Iteration: 1  Instance: /test
+# 1
+# Break in Module test at C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v line 146
+# Compile of testfixture.v was successful.
+# Compile of triangle.v failed with 2 errors.
+# 2 compiles, 1 failed with 2 errors. 
+restart -f
+# Closing VCD file "dump.vcd"
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.test
+# Loading work.test
+# Compile of testfixture.v was successful.
+# Compile of triangle.v was successful.
+# 2 compiles, 0 failed with no errors. 
+# Compile of testfixture.v was successful.
+# Compile of triangle.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart -f
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.test
+# Loading work.test
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.triangle
+# Loading work.triangle
+run -all
+# ** Error: (vsim-PLI-3826) C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(40): $dumpfile : This task should be called prior to the $dumpvars
+# 
+# task.  The $dumpfile task will be ignored.
+# 
+#         Region: /test
+# 
+# ****** START to VERIFY the Triangel Rendering Enginen OPERATION ******
+# 
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(4, 1)
+# (x3, y3)=(1, 7)
+# ERROR at           0:xo=(1) yo=(2)!=expect xo=(1), yo=(1)
+# ERROR at           1:xo=(2) yo=(2)!=expect xo=(2), yo=(1)
+# ERROR at           2:xo=(3) yo=(2)!=expect xo=(3), yo=(1)
+# ERROR at           3:xo=(4) yo=(2)!=expect xo=(4), yo=(1)
+# ERROR at           4:xo=(5) yo=(2)!=expect xo=(1), yo=(2)
+# ERROR at           5:xo=(6) yo=(2)!=expect xo=(2), yo=(2)
+# ERROR at           6:xo=(7) yo=(2)!=expect xo=(3), yo=(2)
+# ERROR at           7:xo=(0) yo=(2)!=expect xo=(1), yo=(3)
+# ERROR at           8:xo=(1) yo=(2)!=expect xo=(2), yo=(3)
+# ERROR at           9:xo=(2) yo=(2)!=expect xo=(3), yo=(3)
+# ERROR at          10:xo=(3) yo=(2)!=expect xo=(1), yo=(4)
+# ERROR at          11:xo=(4) yo=(2)!=expect xo=(2), yo=(4)
+# ERROR at          12:xo=(5) yo=(2)!=expect xo=(1), yo=(5)
+# ERROR at          13:xo=(6) yo=(2)!=expect xo=(2), yo=(5)
+# ERROR at          14:xo=(7) yo=(2)!=expect xo=(1), yo=(6)
+# ERROR at          15:xo=(2) yo=(3)!=expect xo=(1), yo=(7)
+# ERROR at          16:xo=(3) yo=(3)!=expect xo=(1), yo=(1)
+# ERROR at          17:xo=(4) yo=(3)!=expect xo=(2), yo=(1)
+# ERROR at          18:xo=(5) yo=(3)!=expect xo=(3), yo=(1)
+# ERROR at          19:xo=(6) yo=(3)!=expect xo=(4), yo=(1)
+# ERROR at          20:xo=(7) yo=(3)!=expect xo=(5), yo=(1)
+# ERROR at          21:xo=(0) yo=(3)!=expect xo=(6), yo=(1)
+# ERROR at          22:xo=(1) yo=(3)!=expect xo=(7), yo=(1)
+# ERROR at          23:xo=(2) yo=(3)!=expect xo=(1), yo=(2)
+# ERROR at          24:xo=(3) yo=(3)!=expect xo=(2), yo=(2)
+# ERROR at          25:xo=(4) yo=(3)!=expect xo=(3), yo=(2)
+# ERROR at          26:xo=(5) yo=(3)!=expect xo=(4), yo=(2)
+# ERROR at          27:xo=(6) yo=(3)!=expect xo=(1), yo=(3)
+# ---------------------------------------------
+# There are          28 errors!
+# ---------------------------------------------
+# ---------------------------------------------
+# Total delay:       69000 ns
+# ---------------------------------------------
+# ** Note: $finish    : C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(146)
+#    Time: 7100 ns  Iteration: 1  Instance: /test
+# 1
+# Break in Module test at C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v line 146
+# Compile of testfixture.v was successful.
+# Compile of triangle.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart -f
+# Closing VCD file "dump.vcd"
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.test
+# Loading work.test
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.triangle
+# Loading work.triangle
+run -all
+# ** Error: (vsim-PLI-3826) C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(40): $dumpfile : This task should be called prior to the $dumpvars
+# 
+# task.  The $dumpfile task will be ignored.
+# 
+#         Region: /test
+# 
+# ****** START to VERIFY the Triangel Rendering Enginen OPERATION ******
+# 
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(4, 1)
+# (x3, y3)=(1, 7)
+# ERROR at           0:xo=(2) yo=(3)!=expect xo=(1), yo=(1)
+# ERROR at           1:xo=(3) yo=(3)!=expect xo=(2), yo=(1)
+# ERROR at           2:xo=(4) yo=(3)!=expect xo=(3), yo=(1)
+# ERROR at           3:xo=(5) yo=(3)!=expect xo=(4), yo=(1)
+# ERROR at           4:xo=(6) yo=(3)!=expect xo=(1), yo=(2)
+# ERROR at           5:xo=(2) yo=(4)!=expect xo=(2), yo=(2)
+# ERROR at           6:xo=(3) yo=(4)!=expect xo=(3), yo=(2)
+# ERROR at           7:xo=(4) yo=(4)!=expect xo=(1), yo=(3)
+# ERROR at           8:xo=(5) yo=(4)!=expect xo=(2), yo=(3)
+# ERROR at           9:xo=(6) yo=(4)!=expect xo=(3), yo=(3)
+# ERROR at          10:xo=(7) yo=(4)!=expect xo=(1), yo=(4)
+# ERROR at          11:xo=(2) yo=(5)!=expect xo=(2), yo=(4)
+# ERROR at          12:xo=(3) yo=(5)!=expect xo=(1), yo=(5)
+# ERROR at          13:xo=(4) yo=(5)!=expect xo=(2), yo=(5)
+# ERROR at          14:xo=(5) yo=(5)!=expect xo=(1), yo=(6)
+# ERROR at          15:xo=(6) yo=(5)!=expect xo=(1), yo=(7)
+# ERROR at          16:xo=(7) yo=(5)!=expect xo=(1), yo=(1)
+# ERROR at          17:xo=(0) yo=(5)!=expect xo=(2), yo=(1)
+# ERROR at          18:xo=(1) yo=(5)!=expect xo=(3), yo=(1)
+# ERROR at          19:xo=(2) yo=(5)!=expect xo=(4), yo=(1)
+# ERROR at          20:xo=(3) yo=(5)!=expect xo=(5), yo=(1)
+# ERROR at          21:xo=(4) yo=(5)!=expect xo=(6), yo=(1)
+# ERROR at          22:xo=(5) yo=(5)!=expect xo=(7), yo=(1)
+# ERROR at          23:xo=(6) yo=(5)!=expect xo=(1), yo=(2)
+# ERROR at          24:xo=(7) yo=(5)!=expect xo=(2), yo=(2)
+# ERROR at          25:xo=(0) yo=(5)!=expect xo=(3), yo=(2)
+# ERROR at          26:xo=(1) yo=(5)!=expect xo=(4), yo=(2)
+# ERROR at          27:xo=(2) yo=(5)!=expect xo=(1), yo=(3)
+# ---------------------------------------------
+# There are          28 errors!
+# ---------------------------------------------
+# ---------------------------------------------
+# Total delay:       71000 ns
+# ---------------------------------------------
+# ** Note: $finish    : C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(146)
+#    Time: 7300 ns  Iteration: 1  Instance: /test
+# 1
+# Break in Module test at C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v line 146
+add wave -position insertpoint  \
+sim:/test/a
+add wave -position insertpoint  \
+sim:/test/b
+restart -f
+# Closing VCD file "dump.vcd"
+run -all
+# ** Error: (vsim-PLI-3826) C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(40): $dumpfile : This task should be called prior to the $dumpvars
+# 
+# task.  The $dumpfile task will be ignored.
+# 
+#         Region: /test
+# 
+# ****** START to VERIFY the Triangel Rendering Enginen OPERATION ******
+# 
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(4, 1)
+# (x3, y3)=(1, 7)
+# ERROR at           0:xo=(2) yo=(3)!=expect xo=(1), yo=(1)
+# ERROR at           1:xo=(3) yo=(3)!=expect xo=(2), yo=(1)
+# ERROR at           2:xo=(4) yo=(3)!=expect xo=(3), yo=(1)
+# ERROR at           3:xo=(5) yo=(3)!=expect xo=(4), yo=(1)
+# ERROR at           4:xo=(6) yo=(3)!=expect xo=(1), yo=(2)
+# ERROR at           5:xo=(2) yo=(4)!=expect xo=(2), yo=(2)
+# ERROR at           6:xo=(3) yo=(4)!=expect xo=(3), yo=(2)
+# ERROR at           7:xo=(4) yo=(4)!=expect xo=(1), yo=(3)
+# ERROR at           8:xo=(5) yo=(4)!=expect xo=(2), yo=(3)
+# ERROR at           9:xo=(6) yo=(4)!=expect xo=(3), yo=(3)
+# ERROR at          10:xo=(7) yo=(4)!=expect xo=(1), yo=(4)
+# ERROR at          11:xo=(2) yo=(5)!=expect xo=(2), yo=(4)
+# ERROR at          12:xo=(3) yo=(5)!=expect xo=(1), yo=(5)
+# ERROR at          13:xo=(4) yo=(5)!=expect xo=(2), yo=(5)
+# ERROR at          14:xo=(5) yo=(5)!=expect xo=(1), yo=(6)
+# ERROR at          15:xo=(6) yo=(5)!=expect xo=(1), yo=(7)
+# ERROR at          16:xo=(7) yo=(5)!=expect xo=(1), yo=(1)
+# ERROR at          17:xo=(0) yo=(5)!=expect xo=(2), yo=(1)
+# ERROR at          18:xo=(1) yo=(5)!=expect xo=(3), yo=(1)
+# ERROR at          19:xo=(2) yo=(5)!=expect xo=(4), yo=(1)
+# ERROR at          20:xo=(3) yo=(5)!=expect xo=(5), yo=(1)
+# ERROR at          21:xo=(4) yo=(5)!=expect xo=(6), yo=(1)
+# ERROR at          22:xo=(5) yo=(5)!=expect xo=(7), yo=(1)
+# ERROR at          23:xo=(6) yo=(5)!=expect xo=(1), yo=(2)
+# ERROR at          24:xo=(7) yo=(5)!=expect xo=(2), yo=(2)
+# ERROR at          25:xo=(0) yo=(5)!=expect xo=(3), yo=(2)
+# ERROR at          26:xo=(1) yo=(5)!=expect xo=(4), yo=(2)
+# ERROR at          27:xo=(2) yo=(5)!=expect xo=(1), yo=(3)
+# ---------------------------------------------
+# There are          28 errors!
+# ---------------------------------------------
+# ---------------------------------------------
+# Total delay:       71000 ns
+# ---------------------------------------------
+# ** Note: $finish    : C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(146)
+#    Time: 7300 ns  Iteration: 1  Instance: /test
+# 1
+# Break in Module test at C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v line 146
+# Compile of testfixture.v was successful.
+# Compile of triangle.v was successful.
+# 2 compiles, 0 failed with no errors. 
+# Compile of testfixture.v was successful.
+# Compile of triangle.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart -f
+# Closing VCD file "dump.vcd"
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.test
+# Loading work.test
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.triangle
+# Loading work.triangle
+run -all
+# ** Error: (vsim-PLI-3826) C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(40): $dumpfile : This task should be called prior to the $dumpvars
+# 
+# task.  The $dumpfile task will be ignored.
+# 
+#         Region: /test
+# 
+# ****** START to VERIFY the Triangel Rendering Enginen OPERATION ******
+# 
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(4, 1)
+# (x3, y3)=(1, 7)
+# ERROR at           0:xo=(2) yo=(3)!=expect xo=(1), yo=(1)
+# ERROR at           1:xo=(3) yo=(3)!=expect xo=(2), yo=(1)
+# ERROR at           2:xo=(4) yo=(3)!=expect xo=(3), yo=(1)
+# ERROR at           3:xo=(5) yo=(3)!=expect xo=(4), yo=(1)
+# ERROR at           4:xo=(6) yo=(3)!=expect xo=(1), yo=(2)
+# ERROR at           5:xo=(2) yo=(4)!=expect xo=(2), yo=(2)
+# ERROR at           6:xo=(3) yo=(4)!=expect xo=(3), yo=(2)
+# ERROR at           7:xo=(4) yo=(4)!=expect xo=(1), yo=(3)
+# ERROR at           8:xo=(5) yo=(4)!=expect xo=(2), yo=(3)
+# ERROR at           9:xo=(6) yo=(4)!=expect xo=(3), yo=(3)
+# ERROR at          10:xo=(7) yo=(4)!=expect xo=(1), yo=(4)
+# ERROR at          11:xo=(2) yo=(5)!=expect xo=(2), yo=(4)
+# ERROR at          12:xo=(3) yo=(5)!=expect xo=(1), yo=(5)
+# ERROR at          13:xo=(4) yo=(5)!=expect xo=(2), yo=(5)
+# ERROR at          14:xo=(5) yo=(5)!=expect xo=(1), yo=(6)
+# ERROR at          15:xo=(6) yo=(5)!=expect xo=(1), yo=(7)
+# ERROR at          16:xo=(7) yo=(5)!=expect xo=(1), yo=(1)
+# ERROR at          17:xo=(0) yo=(5)!=expect xo=(2), yo=(1)
+# ERROR at          18:xo=(1) yo=(5)!=expect xo=(3), yo=(1)
+# ERROR at          19:xo=(2) yo=(5)!=expect xo=(4), yo=(1)
+# ERROR at          20:xo=(3) yo=(5)!=expect xo=(5), yo=(1)
+# ERROR at          21:xo=(4) yo=(5)!=expect xo=(6), yo=(1)
+# ERROR at          22:xo=(5) yo=(5)!=expect xo=(7), yo=(1)
+# ERROR at          23:xo=(6) yo=(5)!=expect xo=(1), yo=(2)
+# ERROR at          24:xo=(7) yo=(5)!=expect xo=(2), yo=(2)
+# ERROR at          25:xo=(0) yo=(5)!=expect xo=(3), yo=(2)
+# ERROR at          26:xo=(1) yo=(5)!=expect xo=(4), yo=(2)
+# ERROR at          27:xo=(2) yo=(5)!=expect xo=(1), yo=(3)
+# ---------------------------------------------
+# There are          28 errors!
+# ---------------------------------------------
+# ---------------------------------------------
+# Total delay:       71000 ns
+# ---------------------------------------------
+# ** Note: $finish    : C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(146)
+#    Time: 7300 ns  Iteration: 1  Instance: /test
+# 1
+# Break in Module test at C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v line 146
+# Compile of testfixture.v was successful.
+# Compile of triangle.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart -f
+# Closing VCD file "dump.vcd"
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.test
+# Loading work.test
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.triangle
+# Loading work.triangle
+run -all
+# ** Error: (vsim-PLI-3826) C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(40): $dumpfile : This task should be called prior to the $dumpvars
+# 
+# task.  The $dumpfile task will be ignored.
+# 
+#         Region: /test
+# 
+# ****** START to VERIFY the Triangel Rendering Enginen OPERATION ******
+# 
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(4, 1)
+# (x3, y3)=(1, 7)
+# ERROR at           0:xo=(2) yo=(3)!=expect xo=(1), yo=(1)
+# ERROR at           1:xo=(3) yo=(3)!=expect xo=(2), yo=(1)
+# ERROR at           2:xo=(4) yo=(3)!=expect xo=(3), yo=(1)
+# ERROR at           3:xo=(5) yo=(3)!=expect xo=(4), yo=(1)
+# ERROR at           4:xo=(6) yo=(3)!=expect xo=(1), yo=(2)
+# ERROR at           5:xo=(2) yo=(4)!=expect xo=(2), yo=(2)
+# ERROR at           6:xo=(3) yo=(4)!=expect xo=(3), yo=(2)
+# ERROR at           7:xo=(4) yo=(4)!=expect xo=(1), yo=(3)
+# ERROR at           8:xo=(5) yo=(4)!=expect xo=(2), yo=(3)
+# ERROR at           9:xo=(6) yo=(4)!=expect xo=(3), yo=(3)
+# ERROR at          10:xo=(7) yo=(4)!=expect xo=(1), yo=(4)
+# ERROR at          11:xo=(2) yo=(5)!=expect xo=(2), yo=(4)
+# ERROR at          12:xo=(3) yo=(5)!=expect xo=(1), yo=(5)
+# ERROR at          13:xo=(4) yo=(5)!=expect xo=(2), yo=(5)
+# ERROR at          14:xo=(5) yo=(5)!=expect xo=(1), yo=(6)
+# ERROR at          15:xo=(6) yo=(5)!=expect xo=(1), yo=(7)
+# ERROR at          16:xo=(7) yo=(5)!=expect xo=(1), yo=(1)
+# ERROR at          17:xo=(0) yo=(5)!=expect xo=(2), yo=(1)
+# ERROR at          18:xo=(1) yo=(5)!=expect xo=(3), yo=(1)
+# ERROR at          19:xo=(2) yo=(5)!=expect xo=(4), yo=(1)
+# ERROR at          20:xo=(3) yo=(5)!=expect xo=(5), yo=(1)
+# ERROR at          21:xo=(4) yo=(5)!=expect xo=(6), yo=(1)
+# ERROR at          22:xo=(5) yo=(5)!=expect xo=(7), yo=(1)
+# ERROR at          23:xo=(6) yo=(5)!=expect xo=(1), yo=(2)
+# ERROR at          24:xo=(7) yo=(5)!=expect xo=(2), yo=(2)
+# ERROR at          25:xo=(0) yo=(5)!=expect xo=(3), yo=(2)
+# ERROR at          26:xo=(1) yo=(5)!=expect xo=(4), yo=(2)
+# ERROR at          27:xo=(2) yo=(5)!=expect xo=(1), yo=(3)
+# ---------------------------------------------
+# There are          28 errors!
+# ---------------------------------------------
+# ---------------------------------------------
+# Total delay:       71000 ns
+# ---------------------------------------------
+# ** Note: $finish    : C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(146)
+#    Time: 7300 ns  Iteration: 1  Instance: /test
+# 1
+# Break in Module test at C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v line 146
+# Compile of testfixture.v was successful.
+# Compile of triangle.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart -f
+# Closing VCD file "dump.vcd"
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.test
+# Loading work.test
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.triangle
+# Loading work.triangle
+run -all
+# ** Error: (vsim-PLI-3826) C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(40): $dumpfile : This task should be called prior to the $dumpvars
+# 
+# task.  The $dumpfile task will be ignored.
+# 
+#         Region: /test
+# 
+# ****** START to VERIFY the Triangel Rendering Enginen OPERATION ******
+# 
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(4, 1)
+# (x3, y3)=(1, 7)
+# ERROR at           0:xo=(2) yo=(3)!=expect xo=(1), yo=(1)
+# ERROR at           1:xo=(3) yo=(3)!=expect xo=(2), yo=(1)
+# ERROR at           2:xo=(4) yo=(3)!=expect xo=(3), yo=(1)
+# ERROR at           3:xo=(5) yo=(3)!=expect xo=(4), yo=(1)
+# ERROR at           4:xo=(6) yo=(3)!=expect xo=(1), yo=(2)
+# ERROR at           5:xo=(2) yo=(4)!=expect xo=(2), yo=(2)
+# ERROR at           6:xo=(3) yo=(4)!=expect xo=(3), yo=(2)
+# ERROR at           7:xo=(4) yo=(4)!=expect xo=(1), yo=(3)
+# ERROR at           8:xo=(5) yo=(4)!=expect xo=(2), yo=(3)
+# ERROR at           9:xo=(6) yo=(4)!=expect xo=(3), yo=(3)
+# ERROR at          10:xo=(7) yo=(4)!=expect xo=(1), yo=(4)
+# ERROR at          11:xo=(2) yo=(5)!=expect xo=(2), yo=(4)
+# ERROR at          12:xo=(3) yo=(5)!=expect xo=(1), yo=(5)
+# ERROR at          13:xo=(4) yo=(5)!=expect xo=(2), yo=(5)
+# ERROR at          14:xo=(5) yo=(5)!=expect xo=(1), yo=(6)
+# ERROR at          15:xo=(6) yo=(5)!=expect xo=(1), yo=(7)
+# ERROR at          16:xo=(7) yo=(5)!=expect xo=(1), yo=(1)
+# ERROR at          17:xo=(0) yo=(5)!=expect xo=(2), yo=(1)
+# ERROR at          18:xo=(1) yo=(5)!=expect xo=(3), yo=(1)
+# ERROR at          19:xo=(2) yo=(5)!=expect xo=(4), yo=(1)
+# ERROR at          20:xo=(3) yo=(5)!=expect xo=(5), yo=(1)
+# ERROR at          21:xo=(4) yo=(5)!=expect xo=(6), yo=(1)
+# ERROR at          22:xo=(5) yo=(5)!=expect xo=(7), yo=(1)
+# ERROR at          23:xo=(6) yo=(5)!=expect xo=(1), yo=(2)
+# ERROR at          24:xo=(7) yo=(5)!=expect xo=(2), yo=(2)
+# ERROR at          25:xo=(0) yo=(5)!=expect xo=(3), yo=(2)
+# ERROR at          26:xo=(1) yo=(5)!=expect xo=(4), yo=(2)
+# ERROR at          27:xo=(2) yo=(5)!=expect xo=(1), yo=(3)
+# ---------------------------------------------
+# There are          28 errors!
+# ---------------------------------------------
+# ---------------------------------------------
+# Total delay:       71000 ns
+# ---------------------------------------------
+# ** Note: $finish    : C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(146)
+#    Time: 7300 ns  Iteration: 1  Instance: /test
+# 1
+# Break in Module test at C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v line 146
+add wave -position insertpoint  \
+sim:/test/top/a \
+sim:/test/top/b
+# Compile of testfixture.v was successful.
+# Compile of triangle.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart -f
+# Closing VCD file "dump.vcd"
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.test
+# Loading work.test
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.triangle
+# Loading work.triangle
+run -all
+# ** Error: (vsim-PLI-3826) C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(40): $dumpfile : This task should be called prior to the $dumpvars
+# 
+# task.  The $dumpfile task will be ignored.
+# 
+#         Region: /test
+# 
+# ****** START to VERIFY the Triangel Rendering Enginen OPERATION ******
+# 
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(4, 1)
+# (x3, y3)=(1, 7)
+# ERROR at           0:xo=(2) yo=(3)!=expect xo=(1), yo=(1)
+# ERROR at           1:xo=(3) yo=(3)!=expect xo=(2), yo=(1)
+# ERROR at           2:xo=(4) yo=(3)!=expect xo=(3), yo=(1)
+# ERROR at           3:xo=(5) yo=(3)!=expect xo=(4), yo=(1)
+# ERROR at           4:xo=(6) yo=(3)!=expect xo=(1), yo=(2)
+# ERROR at           5:xo=(2) yo=(4)!=expect xo=(2), yo=(2)
+# ERROR at           6:xo=(3) yo=(4)!=expect xo=(3), yo=(2)
+# ERROR at           7:xo=(4) yo=(4)!=expect xo=(1), yo=(3)
+# ERROR at           8:xo=(5) yo=(4)!=expect xo=(2), yo=(3)
+# ERROR at           9:xo=(6) yo=(4)!=expect xo=(3), yo=(3)
+# ERROR at          10:xo=(7) yo=(4)!=expect xo=(1), yo=(4)
+# ERROR at          11:xo=(2) yo=(5)!=expect xo=(2), yo=(4)
+# ERROR at          12:xo=(3) yo=(5)!=expect xo=(1), yo=(5)
+# ERROR at          13:xo=(4) yo=(5)!=expect xo=(2), yo=(5)
+# ERROR at          14:xo=(5) yo=(5)!=expect xo=(1), yo=(6)
+# ERROR at          15:xo=(6) yo=(5)!=expect xo=(1), yo=(7)
+# ERROR at          16:xo=(7) yo=(5)!=expect xo=(1), yo=(1)
+# ERROR at          17:xo=(0) yo=(5)!=expect xo=(2), yo=(1)
+# ERROR at          18:xo=(1) yo=(5)!=expect xo=(3), yo=(1)
+# ERROR at          19:xo=(2) yo=(5)!=expect xo=(4), yo=(1)
+# ERROR at          20:xo=(3) yo=(5)!=expect xo=(5), yo=(1)
+# ERROR at          21:xo=(4) yo=(5)!=expect xo=(6), yo=(1)
+# ERROR at          22:xo=(5) yo=(5)!=expect xo=(7), yo=(1)
+# ERROR at          23:xo=(6) yo=(5)!=expect xo=(1), yo=(2)
+# ERROR at          24:xo=(7) yo=(5)!=expect xo=(2), yo=(2)
+# ERROR at          25:xo=(0) yo=(5)!=expect xo=(3), yo=(2)
+# ERROR at          26:xo=(1) yo=(5)!=expect xo=(4), yo=(2)
+# ERROR at          27:xo=(2) yo=(5)!=expect xo=(1), yo=(3)
+# ---------------------------------------------
+# There are          28 errors!
+# ---------------------------------------------
+# ---------------------------------------------
+# Total delay:       71000 ns
+# ---------------------------------------------
+# ** Note: $finish    : C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(146)
+#    Time: 7300 ns  Iteration: 1  Instance: /test
+# 1
+# Break in Module test at C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v line 146
+# Compile of testfixture.v was successful.
+# Compile of triangle.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart -f
+# Closing VCD file "dump.vcd"
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.test
+# Loading work.test
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.triangle
+# Loading work.triangle
+run -all
+# ** Error: (vsim-PLI-3826) C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(40): $dumpfile : This task should be called prior to the $dumpvars
+# 
+# task.  The $dumpfile task will be ignored.
+# 
+#         Region: /test
+# 
+# ****** START to VERIFY the Triangel Rendering Enginen OPERATION ******
+# 
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(4, 1)
+# (x3, y3)=(1, 7)
+# ERROR at           0:xo=(2) yo=(0)!=expect xo=(1), yo=(1)
+# ERROR at           1:xo=(3) yo=(0)!=expect xo=(2), yo=(1)
+# ERROR at           2:xo=(2) yo=(1)!=expect xo=(3), yo=(1)
+# ERROR at           3:xo=(3) yo=(1)!=expect xo=(4), yo=(1)
+# ERROR at           4:xo=(4) yo=(1)!=expect xo=(1), yo=(2)
+# ERROR at           5:xo=(5) yo=(1)!=expect xo=(2), yo=(2)
+# ERROR at           6:xo=(6) yo=(1)!=expect xo=(3), yo=(2)
+# ERROR at           7:xo=(7) yo=(1)!=expect xo=(1), yo=(3)
+# ERROR at           8:xo=(0) yo=(1)!=expect xo=(2), yo=(3)
+# ERROR at           9:xo=(1) yo=(1)!=expect xo=(3), yo=(3)
+# ERROR at          10:xo=(2) yo=(1)!=expect xo=(1), yo=(4)
+# ERROR at          11:xo=(3) yo=(1)!=expect xo=(2), yo=(4)
+# ERROR at          12:xo=(4) yo=(1)!=expect xo=(1), yo=(5)
+# ERROR at          13:xo=(5) yo=(1)!=expect xo=(2), yo=(5)
+# ERROR at          14:xo=(6) yo=(1)!=expect xo=(1), yo=(6)
+# ERROR at          15:xo=(7) yo=(1)!=expect xo=(1), yo=(7)
+# ERROR at          16:xo=(0) yo=(1)!=expect xo=(1), yo=(1)
+# ERROR at          17:xo=(1) yo=(1)!=expect xo=(2), yo=(1)
+# ERROR at          18:xo=(2) yo=(1)!=expect xo=(3), yo=(1)
+# ERROR at          19:xo=(3) yo=(1)!=expect xo=(4), yo=(1)
+# ERROR at          20:xo=(4) yo=(1)!=expect xo=(5), yo=(1)
+# ERROR at          21:xo=(5) yo=(1)!=expect xo=(6), yo=(1)
+# ERROR at          22:xo=(6) yo=(1)!=expect xo=(7), yo=(1)
+# ERROR at          23:xo=(7) yo=(1)!=expect xo=(1), yo=(2)
+# ERROR at          24:xo=(0) yo=(1)!=expect xo=(2), yo=(2)
+# ERROR at          25:xo=(1) yo=(1)!=expect xo=(3), yo=(2)
+# ERROR at          26:xo=(2) yo=(1)!=expect xo=(4), yo=(2)
+# ERROR at          27:xo=(3) yo=(1)!=expect xo=(1), yo=(3)
+# ---------------------------------------------
+# There are          28 errors!
+# ---------------------------------------------
+# ---------------------------------------------
+# Total delay:       95000 ns
+# ---------------------------------------------
+# ** Note: $finish    : C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(146)
+#    Time: 9700 ns  Iteration: 1  Instance: /test
+# 1
+# Break in Module test at C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v line 146
+# Compile of testfixture.v was successful.
+# Compile of triangle.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart -f
+# Closing VCD file "dump.vcd"
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.test
+# Loading work.test
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.triangle
+# Loading work.triangle
+run -all
+# ** Error: (vsim-PLI-3826) C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(40): $dumpfile : This task should be called prior to the $dumpvars
+# 
+# task.  The $dumpfile task will be ignored.
+# 
+#         Region: /test
+# 
+# ****** START to VERIFY the Triangel Rendering Enginen OPERATION ******
+# 
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(4, 1)
+# (x3, y3)=(1, 7)
+# ERROR at           0:xo=(2) yo=(0)!=expect xo=(1), yo=(1)
+# ERROR at           1:xo=(3) yo=(0)!=expect xo=(2), yo=(1)
+# ERROR at           2:xo=(2) yo=(1)!=expect xo=(3), yo=(1)
+# ERROR at           3:xo=(3) yo=(1)!=expect xo=(4), yo=(1)
+# ERROR at           4:xo=(4) yo=(1)!=expect xo=(1), yo=(2)
+# ERROR at           5:xo=(5) yo=(1)!=expect xo=(2), yo=(2)
+# ERROR at           6:xo=(6) yo=(1)!=expect xo=(3), yo=(2)
+# ERROR at           7:xo=(7) yo=(1)!=expect xo=(1), yo=(3)
+# ERROR at           8:xo=(0) yo=(1)!=expect xo=(2), yo=(3)
+# ERROR at           9:xo=(1) yo=(1)!=expect xo=(3), yo=(3)
+# ERROR at          10:xo=(2) yo=(1)!=expect xo=(1), yo=(4)
+# ERROR at          11:xo=(3) yo=(1)!=expect xo=(2), yo=(4)
+# ERROR at          12:xo=(4) yo=(1)!=expect xo=(1), yo=(5)
+# ERROR at          13:xo=(5) yo=(1)!=expect xo=(2), yo=(5)
+# ERROR at          14:xo=(6) yo=(1)!=expect xo=(1), yo=(6)
+# ERROR at          15:xo=(7) yo=(1)!=expect xo=(1), yo=(7)
+# ERROR at          16:xo=(0) yo=(1)!=expect xo=(1), yo=(1)
+# ERROR at          17:xo=(1) yo=(1)!=expect xo=(2), yo=(1)
+# ERROR at          18:xo=(2) yo=(1)!=expect xo=(3), yo=(1)
+# ERROR at          19:xo=(3) yo=(1)!=expect xo=(4), yo=(1)
+# ERROR at          20:xo=(4) yo=(1)!=expect xo=(5), yo=(1)
+# ERROR at          21:xo=(5) yo=(1)!=expect xo=(6), yo=(1)
+# ERROR at          22:xo=(6) yo=(1)!=expect xo=(7), yo=(1)
+# ERROR at          23:xo=(7) yo=(1)!=expect xo=(1), yo=(2)
+# ERROR at          24:xo=(0) yo=(1)!=expect xo=(2), yo=(2)
+# ERROR at          25:xo=(1) yo=(1)!=expect xo=(3), yo=(2)
+# ERROR at          26:xo=(2) yo=(1)!=expect xo=(4), yo=(2)
+# ERROR at          27:xo=(3) yo=(1)!=expect xo=(1), yo=(3)
+# ---------------------------------------------
+# There are          28 errors!
+# ---------------------------------------------
+# ---------------------------------------------
+# Total delay:       95000 ns
+# ---------------------------------------------
+# ** Note: $finish    : C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(146)
+#    Time: 9700 ns  Iteration: 1  Instance: /test
+# 1
+# Break in Module test at C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v line 146
+# Compile of testfixture.v was successful.
+# Compile of triangle.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart -f
+# Closing VCD file "dump.vcd"
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.test
+# Loading work.test
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.triangle
+# Loading work.triangle
+run -all
+# ** Error: (vsim-PLI-3826) C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(40): $dumpfile : This task should be called prior to the $dumpvars
+# 
+# task.  The $dumpfile task will be ignored.
+# 
+#         Region: /test
+# 
+# ****** START to VERIFY the Triangel Rendering Enginen OPERATION ******
+# 
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(4, 1)
+# (x3, y3)=(1, 7)
+# ERROR at           0:xo=(2) yo=(0)!=expect xo=(1), yo=(1)
+# ERROR at           1:xo=(3) yo=(0)!=expect xo=(2), yo=(1)
+# ERROR at           2:xo=(2) yo=(1)!=expect xo=(3), yo=(1)
+# ERROR at           3:xo=(3) yo=(1)!=expect xo=(4), yo=(1)
+# ERROR at           4:xo=(4) yo=(1)!=expect xo=(1), yo=(2)
+# ERROR at           5:xo=(5) yo=(1)!=expect xo=(2), yo=(2)
+# ERROR at           6:xo=(6) yo=(1)!=expect xo=(3), yo=(2)
+# ERROR at           7:xo=(7) yo=(1)!=expect xo=(1), yo=(3)
+# ERROR at           8:xo=(0) yo=(1)!=expect xo=(2), yo=(3)
+# ERROR at           9:xo=(1) yo=(1)!=expect xo=(3), yo=(3)
+# ERROR at          10:xo=(2) yo=(1)!=expect xo=(1), yo=(4)
+# ERROR at          11:xo=(3) yo=(1)!=expect xo=(2), yo=(4)
+# ERROR at          12:xo=(4) yo=(1)!=expect xo=(1), yo=(5)
+# ERROR at          13:xo=(5) yo=(1)!=expect xo=(2), yo=(5)
+# ERROR at          14:xo=(6) yo=(1)!=expect xo=(1), yo=(6)
+# ERROR at          15:xo=(7) yo=(1)!=expect xo=(1), yo=(7)
+# ERROR at          16:xo=(0) yo=(1)!=expect xo=(1), yo=(1)
+# ERROR at          17:xo=(1) yo=(1)!=expect xo=(2), yo=(1)
+# ERROR at          18:xo=(2) yo=(1)!=expect xo=(3), yo=(1)
+# ERROR at          19:xo=(3) yo=(1)!=expect xo=(4), yo=(1)
+# ERROR at          20:xo=(4) yo=(1)!=expect xo=(5), yo=(1)
+# ERROR at          21:xo=(5) yo=(1)!=expect xo=(6), yo=(1)
+# ERROR at          22:xo=(6) yo=(1)!=expect xo=(7), yo=(1)
+# ERROR at          23:xo=(7) yo=(1)!=expect xo=(1), yo=(2)
+# ERROR at          24:xo=(0) yo=(1)!=expect xo=(2), yo=(2)
+# ERROR at          25:xo=(1) yo=(1)!=expect xo=(3), yo=(2)
+# ERROR at          26:xo=(2) yo=(1)!=expect xo=(4), yo=(2)
+# ERROR at          27:xo=(3) yo=(1)!=expect xo=(1), yo=(3)
+# ---------------------------------------------
+# There are          28 errors!
+# ---------------------------------------------
+# ---------------------------------------------
+# Total delay:       95000 ns
+# ---------------------------------------------
+# ** Note: $finish    : C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(146)
+#    Time: 9700 ns  Iteration: 1  Instance: /test
+# 1
+# Break in Module test at C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v line 146
+# Compile of testfixture.v was successful.
+# Compile of triangle.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart -f
+# Closing VCD file "dump.vcd"
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.test
+# Loading work.test
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.triangle
+# Loading work.triangle
+run -all
+# ** Error: (vsim-PLI-3826) C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(40): $dumpfile : This task should be called prior to the $dumpvars
+# 
+# task.  The $dumpfile task will be ignored.
+# 
+#         Region: /test
+# 
+# ****** START to VERIFY the Triangel Rendering Enginen OPERATION ******
+# 
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(4, 1)
+# (x3, y3)=(1, 7)
+# ERROR at           0:xo=(2) yo=(0)!=expect xo=(1), yo=(1)
+# ERROR at           1:xo=(3) yo=(0)!=expect xo=(2), yo=(1)
+# ERROR at           2:xo=(2) yo=(1)!=expect xo=(3), yo=(1)
+# ERROR at           3:xo=(3) yo=(1)!=expect xo=(4), yo=(1)
+# ERROR at           4:xo=(4) yo=(1)!=expect xo=(1), yo=(2)
+# ERROR at           5:xo=(5) yo=(1)!=expect xo=(2), yo=(2)
+# ERROR at           6:xo=(6) yo=(1)!=expect xo=(3), yo=(2)
+# ERROR at           7:xo=(7) yo=(1)!=expect xo=(1), yo=(3)
+# ERROR at           8:xo=(0) yo=(1)!=expect xo=(2), yo=(3)
+# ERROR at           9:xo=(1) yo=(1)!=expect xo=(3), yo=(3)
+# ERROR at          10:xo=(2) yo=(1)!=expect xo=(1), yo=(4)
+# ERROR at          11:xo=(3) yo=(1)!=expect xo=(2), yo=(4)
+# ERROR at          12:xo=(4) yo=(1)!=expect xo=(1), yo=(5)
+# ERROR at          13:xo=(5) yo=(1)!=expect xo=(2), yo=(5)
+# ERROR at          14:xo=(6) yo=(1)!=expect xo=(1), yo=(6)
+# ERROR at          15:xo=(7) yo=(1)!=expect xo=(1), yo=(7)
+# ERROR at          16:xo=(0) yo=(1)!=expect xo=(1), yo=(1)
+# ERROR at          17:xo=(1) yo=(1)!=expect xo=(2), yo=(1)
+# ERROR at          18:xo=(2) yo=(1)!=expect xo=(3), yo=(1)
+# ERROR at          19:xo=(3) yo=(1)!=expect xo=(4), yo=(1)
+# ERROR at          20:xo=(4) yo=(1)!=expect xo=(5), yo=(1)
+# ERROR at          21:xo=(5) yo=(1)!=expect xo=(6), yo=(1)
+# ERROR at          22:xo=(6) yo=(1)!=expect xo=(7), yo=(1)
+# ERROR at          23:xo=(7) yo=(1)!=expect xo=(1), yo=(2)
+# ERROR at          24:xo=(0) yo=(1)!=expect xo=(2), yo=(2)
+# ERROR at          25:xo=(1) yo=(1)!=expect xo=(3), yo=(2)
+# ERROR at          26:xo=(2) yo=(1)!=expect xo=(4), yo=(2)
+# ERROR at          27:xo=(3) yo=(1)!=expect xo=(1), yo=(3)
+# ---------------------------------------------
+# There are          28 errors!
+# ---------------------------------------------
+# ---------------------------------------------
+# Total delay:       95000 ns
+# ---------------------------------------------
+# ** Note: $finish    : C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(146)
+#    Time: 9700 ns  Iteration: 1  Instance: /test
+# 1
+# Break in Module test at C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v line 146
+# Compile of testfixture.v was successful.
+# Compile of triangle.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart -f
+# Closing VCD file "dump.vcd"
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.test
+# Loading work.test
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.triangle
+# Loading work.triangle
+run -all
+# ** Error: (vsim-PLI-3826) C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(40): $dumpfile : This task should be called prior to the $dumpvars
+# 
+# task.  The $dumpfile task will be ignored.
+# 
+#         Region: /test
+# 
+# ****** START to VERIFY the Triangel Rendering Enginen OPERATION ******
+# 
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(4, 1)
+# (x3, y3)=(1, 7)
+# ERROR at           0:xo=(2) yo=(0)!=expect xo=(1), yo=(1)
+# ERROR at           1:xo=(3) yo=(0)!=expect xo=(2), yo=(1)
+# ERROR at           2:xo=(2) yo=(1)!=expect xo=(3), yo=(1)
+# ERROR at           3:xo=(3) yo=(1)!=expect xo=(4), yo=(1)
+# ERROR at           4:xo=(4) yo=(1)!=expect xo=(1), yo=(2)
+# ERROR at           5:xo=(5) yo=(1)!=expect xo=(2), yo=(2)
+# ERROR at           6:xo=(6) yo=(1)!=expect xo=(3), yo=(2)
+# ERROR at           7:xo=(7) yo=(1)!=expect xo=(1), yo=(3)
+# ERROR at           8:xo=(0) yo=(1)!=expect xo=(2), yo=(3)
+# ERROR at           9:xo=(1) yo=(1)!=expect xo=(3), yo=(3)
+# ERROR at          10:xo=(2) yo=(1)!=expect xo=(1), yo=(4)
+# ERROR at          11:xo=(3) yo=(1)!=expect xo=(2), yo=(4)
+# ERROR at          12:xo=(4) yo=(1)!=expect xo=(1), yo=(5)
+# ERROR at          13:xo=(5) yo=(1)!=expect xo=(2), yo=(5)
+# ERROR at          14:xo=(6) yo=(1)!=expect xo=(1), yo=(6)
+# ERROR at          15:xo=(7) yo=(1)!=expect xo=(1), yo=(7)
+# ERROR at          16:xo=(0) yo=(1)!=expect xo=(1), yo=(1)
+# ERROR at          17:xo=(1) yo=(1)!=expect xo=(2), yo=(1)
+# ERROR at          18:xo=(2) yo=(1)!=expect xo=(3), yo=(1)
+# ERROR at          19:xo=(3) yo=(1)!=expect xo=(4), yo=(1)
+# ERROR at          20:xo=(4) yo=(1)!=expect xo=(5), yo=(1)
+# ERROR at          21:xo=(5) yo=(1)!=expect xo=(6), yo=(1)
+# ERROR at          22:xo=(6) yo=(1)!=expect xo=(7), yo=(1)
+# ERROR at          23:xo=(7) yo=(1)!=expect xo=(1), yo=(2)
+# ERROR at          24:xo=(0) yo=(1)!=expect xo=(2), yo=(2)
+# ERROR at          25:xo=(1) yo=(1)!=expect xo=(3), yo=(2)
+# ERROR at          26:xo=(2) yo=(1)!=expect xo=(4), yo=(2)
+# ERROR at          27:xo=(3) yo=(1)!=expect xo=(1), yo=(3)
+# ---------------------------------------------
+# There are          28 errors!
+# ---------------------------------------------
+# ---------------------------------------------
+# Total delay:       95000 ns
+# ---------------------------------------------
+# ** Note: $finish    : C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(146)
+#    Time: 9700 ns  Iteration: 1  Instance: /test
+# 1
+# Break in Module test at C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v line 146
+# Compile of testfixture.v was successful.
+# Compile of triangle.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart -f
+# Closing VCD file "dump.vcd"
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.test
+# Loading work.test
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.triangle
+# Loading work.triangle
+run -all
+# ** Error: (vsim-PLI-3826) C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(40): $dumpfile : This task should be called prior to the $dumpvars
+# 
+# task.  The $dumpfile task will be ignored.
+# 
+#         Region: /test
+# 
+# ****** START to VERIFY the Triangel Rendering Enginen OPERATION ******
+# 
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(4, 1)
+# (x3, y3)=(1, 7)
+# ERROR at           0:xo=(2) yo=(3)!=expect xo=(1), yo=(1)
+# ERROR at           1:xo=(3) yo=(3)!=expect xo=(2), yo=(1)
+# ERROR at           2:xo=(4) yo=(3)!=expect xo=(3), yo=(1)
+# ERROR at           3:xo=(5) yo=(3)!=expect xo=(4), yo=(1)
+# ERROR at           4:xo=(6) yo=(3)!=expect xo=(1), yo=(2)
+# ERROR at           5:xo=(2) yo=(4)!=expect xo=(2), yo=(2)
+# ERROR at           6:xo=(3) yo=(4)!=expect xo=(3), yo=(2)
+# ERROR at           7:xo=(4) yo=(4)!=expect xo=(1), yo=(3)
+# ERROR at           8:xo=(5) yo=(4)!=expect xo=(2), yo=(3)
+# ERROR at           9:xo=(6) yo=(4)!=expect xo=(3), yo=(3)
+# ERROR at          10:xo=(7) yo=(4)!=expect xo=(1), yo=(4)
+# ERROR at          11:xo=(2) yo=(5)!=expect xo=(2), yo=(4)
+# ERROR at          12:xo=(3) yo=(5)!=expect xo=(1), yo=(5)
+# ERROR at          13:xo=(4) yo=(5)!=expect xo=(2), yo=(5)
+# ERROR at          14:xo=(5) yo=(5)!=expect xo=(1), yo=(6)
+# ERROR at          15:xo=(6) yo=(5)!=expect xo=(1), yo=(7)
+# ERROR at          16:xo=(7) yo=(5)!=expect xo=(1), yo=(1)
+# ERROR at          17:xo=(0) yo=(5)!=expect xo=(2), yo=(1)
+# ERROR at          18:xo=(1) yo=(5)!=expect xo=(3), yo=(1)
+# ERROR at          19:xo=(2) yo=(5)!=expect xo=(4), yo=(1)
+# ERROR at          20:xo=(3) yo=(5)!=expect xo=(5), yo=(1)
+# ERROR at          21:xo=(4) yo=(5)!=expect xo=(6), yo=(1)
+# ERROR at          22:xo=(5) yo=(5)!=expect xo=(7), yo=(1)
+# ERROR at          23:xo=(6) yo=(5)!=expect xo=(1), yo=(2)
+# ERROR at          24:xo=(7) yo=(5)!=expect xo=(2), yo=(2)
+# ERROR at          25:xo=(0) yo=(5)!=expect xo=(3), yo=(2)
+# ERROR at          26:xo=(1) yo=(5)!=expect xo=(4), yo=(2)
+# ERROR at          27:xo=(2) yo=(5)!=expect xo=(1), yo=(3)
+# ---------------------------------------------
+# There are          28 errors!
+# ---------------------------------------------
+# ---------------------------------------------
+# Total delay:       71000 ns
+# ---------------------------------------------
+# ** Note: $finish    : C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(146)
+#    Time: 7300 ns  Iteration: 1  Instance: /test
+# 1
+# Break in Module test at C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v line 146
+# Compile of testfixture.v was successful.
+# Compile of triangle.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart -f
+# Closing VCD file "dump.vcd"
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.test
+# Loading work.test
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.triangle
+# Loading work.triangle
+run -all
+# ** Error: (vsim-PLI-3826) C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(40): $dumpfile : This task should be called prior to the $dumpvars
+# 
+# task.  The $dumpfile task will be ignored.
+# 
+#         Region: /test
+# 
+# ****** START to VERIFY the Triangel Rendering Enginen OPERATION ******
+# 
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(4, 1)
+# (x3, y3)=(1, 7)
+# ERROR at           0:xo=(1) yo=(2)!=expect xo=(1), yo=(1)
+# ERROR at           1:xo=(2) yo=(2)!=expect xo=(2), yo=(1)
+# ERROR at           2:xo=(3) yo=(2)!=expect xo=(3), yo=(1)
+# ERROR at           3:xo=(4) yo=(2)!=expect xo=(4), yo=(1)
+# ERROR at           4:xo=(5) yo=(2)!=expect xo=(1), yo=(2)
+# ERROR at           5:xo=(6) yo=(2)!=expect xo=(2), yo=(2)
+# ERROR at           6:xo=(7) yo=(2)!=expect xo=(3), yo=(2)
+# ERROR at           7:xo=(0) yo=(2)!=expect xo=(1), yo=(3)
+# ERROR at           8:xo=(1) yo=(2)!=expect xo=(2), yo=(3)
+# ERROR at           9:xo=(2) yo=(2)!=expect xo=(3), yo=(3)
+# ERROR at          10:xo=(3) yo=(2)!=expect xo=(1), yo=(4)
+# ERROR at          11:xo=(4) yo=(2)!=expect xo=(2), yo=(4)
+# ERROR at          12:xo=(5) yo=(2)!=expect xo=(1), yo=(5)
+# ERROR at          13:xo=(6) yo=(2)!=expect xo=(2), yo=(5)
+# ERROR at          14:xo=(7) yo=(2)!=expect xo=(1), yo=(6)
+# ERROR at          15:xo=(2) yo=(3)!=expect xo=(1), yo=(7)
+# ERROR at          16:xo=(3) yo=(3)!=expect xo=(1), yo=(1)
+# ERROR at          17:xo=(4) yo=(3)!=expect xo=(2), yo=(1)
+# ERROR at          18:xo=(5) yo=(3)!=expect xo=(3), yo=(1)
+# ERROR at          19:xo=(6) yo=(3)!=expect xo=(4), yo=(1)
+# ERROR at          20:xo=(7) yo=(3)!=expect xo=(5), yo=(1)
+# ERROR at          21:xo=(0) yo=(3)!=expect xo=(6), yo=(1)
+# ERROR at          22:xo=(1) yo=(3)!=expect xo=(7), yo=(1)
+# ERROR at          23:xo=(2) yo=(3)!=expect xo=(1), yo=(2)
+# ERROR at          24:xo=(3) yo=(3)!=expect xo=(2), yo=(2)
+# ERROR at          25:xo=(4) yo=(3)!=expect xo=(3), yo=(2)
+# ERROR at          26:xo=(5) yo=(3)!=expect xo=(4), yo=(2)
+# ERROR at          27:xo=(6) yo=(3)!=expect xo=(1), yo=(3)
+# ---------------------------------------------
+# There are          28 errors!
+# ---------------------------------------------
+# ---------------------------------------------
+# Total delay:       69000 ns
+# ---------------------------------------------
+# ** Note: $finish    : C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(146)
+#    Time: 7100 ns  Iteration: 1  Instance: /test
+# 1
+# Break in Module test at C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v line 146
+# Compile of testfixture.v was successful.
+# Compile of triangle.v failed with 1 errors.
+# 2 compiles, 1 failed with 1 error. 
+# Compile of testfixture.v was successful.
+# Compile of triangle.v was successful.
+# 2 compiles, 0 failed with no errors. 
+# Compile of testfixture.v was successful.
+# Compile of triangle.v failed with 1 errors.
+# 2 compiles, 1 failed with 1 error. 
+# Compile of testfixture.v was successful.
+# Compile of triangle.v failed with 1 errors.
+# 2 compiles, 1 failed with 1 error. 
+# Compile of testfixture.v was successful.
+# Compile of triangle.v failed with 1 errors.
+# 2 compiles, 1 failed with 1 error. 
+# Load canceled
+# Compile of testfixture.v was successful.
+# Compile of triangle.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart -f
+# Closing VCD file "dump.vcd"
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.test
+# Loading work.test
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.triangle
+# Loading work.triangle
+run -all
+# ** Error: (vsim-PLI-3826) C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(40): $dumpfile : This task should be called prior to the $dumpvars
+# 
+# task.  The $dumpfile task will be ignored.
+# 
+#         Region: /test
+# 
+# ****** START to VERIFY the Triangel Rendering Enginen OPERATION ******
+# 
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(4, 1)
+# (x3, y3)=(1, 7)
+# ERROR at           0:xo=(2) yo=(3)!=expect xo=(1), yo=(1)
+# ERROR at           1:xo=(3) yo=(3)!=expect xo=(2), yo=(1)
+# ERROR at           2:xo=(4) yo=(3)!=expect xo=(3), yo=(1)
+# ERROR at           3:xo=(5) yo=(3)!=expect xo=(4), yo=(1)
+# ERROR at           4:xo=(6) yo=(3)!=expect xo=(1), yo=(2)
+# ERROR at           5:xo=(2) yo=(4)!=expect xo=(2), yo=(2)
+# ERROR at           6:xo=(3) yo=(4)!=expect xo=(3), yo=(2)
+# ERROR at           7:xo=(4) yo=(4)!=expect xo=(1), yo=(3)
+# ERROR at           8:xo=(5) yo=(4)!=expect xo=(2), yo=(3)
+# ERROR at           9:xo=(6) yo=(4)!=expect xo=(3), yo=(3)
+# ERROR at          10:xo=(7) yo=(4)!=expect xo=(1), yo=(4)
+# ERROR at          11:xo=(2) yo=(5)!=expect xo=(2), yo=(4)
+# ERROR at          12:xo=(3) yo=(5)!=expect xo=(1), yo=(5)
+# ERROR at          13:xo=(4) yo=(5)!=expect xo=(2), yo=(5)
+# ERROR at          14:xo=(5) yo=(5)!=expect xo=(1), yo=(6)
+# ERROR at          15:xo=(6) yo=(5)!=expect xo=(1), yo=(7)
+# ERROR at          16:xo=(7) yo=(5)!=expect xo=(1), yo=(1)
+# ERROR at          17:xo=(0) yo=(5)!=expect xo=(2), yo=(1)
+# ERROR at          18:xo=(1) yo=(5)!=expect xo=(3), yo=(1)
+# ERROR at          19:xo=(2) yo=(5)!=expect xo=(4), yo=(1)
+# ERROR at          20:xo=(3) yo=(5)!=expect xo=(5), yo=(1)
+# ERROR at          21:xo=(4) yo=(5)!=expect xo=(6), yo=(1)
+# ERROR at          22:xo=(5) yo=(5)!=expect xo=(7), yo=(1)
+# ERROR at          23:xo=(6) yo=(5)!=expect xo=(1), yo=(2)
+# ERROR at          24:xo=(7) yo=(5)!=expect xo=(2), yo=(2)
+# ERROR at          25:xo=(0) yo=(5)!=expect xo=(3), yo=(2)
+# ERROR at          26:xo=(1) yo=(5)!=expect xo=(4), yo=(2)
+# ERROR at          27:xo=(2) yo=(5)!=expect xo=(1), yo=(3)
+# ---------------------------------------------
+# There are          28 errors!
+# ---------------------------------------------
+# ---------------------------------------------
+# Total delay:       71000 ns
+# ---------------------------------------------
+# ** Note: $finish    : C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(146)
+#    Time: 7300 ns  Iteration: 1  Instance: /test
+# 1
+# Break in Module test at C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v line 146
+# Compile of testfixture.v was successful.
+# Compile of triangle.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart -f
+# Closing VCD file "dump.vcd"
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.test
+# Loading work.test
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.triangle
+# Loading work.triangle
+run -all
+# ** Error: (vsim-PLI-3826) C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(40): $dumpfile : This task should be called prior to the $dumpvars
+# 
+# task.  The $dumpfile task will be ignored.
+# 
+#         Region: /test
+# 
+# ****** START to VERIFY the Triangel Rendering Enginen OPERATION ******
+# 
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(4, 1)
+# (x3, y3)=(1, 7)
+# ERROR at           0:xo=(2) yo=(1)!=expect xo=(1), yo=(1)
+# ERROR at           1:xo=(3) yo=(1)!=expect xo=(2), yo=(1)
+# ERROR at           2:xo=(4) yo=(1)!=expect xo=(3), yo=(1)
+# ERROR at           3:xo=(5) yo=(1)!=expect xo=(4), yo=(1)
+# ERROR at           4:xo=(6) yo=(1)!=expect xo=(1), yo=(2)
+# ERROR at           5:xo=(7) yo=(1)!=expect xo=(2), yo=(2)
+# ERROR at           6:xo=(0) yo=(1)!=expect xo=(3), yo=(2)
+# ERROR at           7:xo=(1) yo=(1)!=expect xo=(1), yo=(3)
+# ERROR at           8:xo=(2) yo=(1)!=expect xo=(2), yo=(3)
+# ERROR at           9:xo=(3) yo=(1)!=expect xo=(3), yo=(3)
+# ERROR at          10:xo=(4) yo=(1)!=expect xo=(1), yo=(4)
+# ERROR at          11:xo=(5) yo=(1)!=expect xo=(2), yo=(4)
+# ERROR at          12:xo=(6) yo=(1)!=expect xo=(1), yo=(5)
+# ERROR at          13:xo=(7) yo=(1)!=expect xo=(2), yo=(5)
+# ERROR at          14:xo=(0) yo=(1)!=expect xo=(1), yo=(6)
+# ERROR at          15:xo=(1) yo=(1)!=expect xo=(1), yo=(7)
+# ERROR at          16:xo=(2) yo=(1)!=expect xo=(1), yo=(1)
+# ERROR at          17:xo=(3) yo=(1)!=expect xo=(2), yo=(1)
+# ERROR at          18:xo=(4) yo=(1)!=expect xo=(3), yo=(1)
+# ERROR at          19:xo=(5) yo=(1)!=expect xo=(4), yo=(1)
+# ERROR at          20:xo=(6) yo=(1)!=expect xo=(5), yo=(1)
+# ERROR at          21:xo=(7) yo=(1)!=expect xo=(6), yo=(1)
+# ERROR at          22:xo=(0) yo=(1)!=expect xo=(7), yo=(1)
+# ERROR at          23:xo=(1) yo=(1)!=expect xo=(1), yo=(2)
+# ERROR at          24:xo=(2) yo=(1)!=expect xo=(2), yo=(2)
+# ERROR at          25:xo=(3) yo=(1)!=expect xo=(3), yo=(2)
+# ERROR at          26:xo=(4) yo=(1)!=expect xo=(4), yo=(2)
+# ERROR at          27:xo=(5) yo=(1)!=expect xo=(1), yo=(3)
+# ---------------------------------------------
+# There are          28 errors!
+# ---------------------------------------------
+# ---------------------------------------------
+# Total delay:       95000 ns
+# ---------------------------------------------
+# ** Note: $finish    : C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(146)
+#    Time: 9700 ns  Iteration: 1  Instance: /test
+# 1
+# Break in Module test at C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v line 146
+# Causality operation skipped due to absense of debug database file
+# Compile of testfixture.v was successful.
+# Compile of triangle.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart -f
+# Closing VCD file "dump.vcd"
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.test
+# Loading work.test
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.triangle
+# Loading work.triangle
+run -all
+# ** Error: (vsim-PLI-3826) C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(40): $dumpfile : This task should be called prior to the $dumpvars
+# 
+# task.  The $dumpfile task will be ignored.
+# 
+#         Region: /test
+# 
+# ****** START to VERIFY the Triangel Rendering Enginen OPERATION ******
+# 
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(4, 1)
+# (x3, y3)=(1, 7)
+# ERROR at           0:xo=(7) yo=(2)!=expect xo=(1), yo=(1)
+# ERROR at           1:xo=(2) yo=(3)!=expect xo=(2), yo=(1)
+# ERROR at           2:xo=(3) yo=(3)!=expect xo=(3), yo=(1)
+# ERROR at           3:xo=(4) yo=(3)!=expect xo=(4), yo=(1)
+# ERROR at           4:xo=(5) yo=(3)!=expect xo=(1), yo=(2)
+# ERROR at           5:xo=(6) yo=(3)!=expect xo=(2), yo=(2)
+# ERROR at           6:xo=(7) yo=(3)!=expect xo=(3), yo=(2)
+# ERROR at           7:xo=(0) yo=(3)!=expect xo=(1), yo=(3)
+# ERROR at           8:xo=(1) yo=(3)!=expect xo=(2), yo=(3)
+# ERROR at           9:xo=(2) yo=(3)!=expect xo=(3), yo=(3)
+# ERROR at          10:xo=(3) yo=(3)!=expect xo=(1), yo=(4)
+# ERROR at          11:xo=(4) yo=(3)!=expect xo=(2), yo=(4)
+# ERROR at          12:xo=(5) yo=(3)!=expect xo=(1), yo=(5)
+# ERROR at          13:xo=(6) yo=(3)!=expect xo=(2), yo=(5)
+# ERROR at          14:xo=(7) yo=(3)!=expect xo=(1), yo=(6)
+# ERROR at          15:xo=(0) yo=(3)!=expect xo=(1), yo=(7)
+# ERROR at          16:xo=(1) yo=(3)!=expect xo=(1), yo=(1)
+# ERROR at          17:xo=(2) yo=(3)!=expect xo=(2), yo=(1)
+# ERROR at          18:xo=(3) yo=(3)!=expect xo=(3), yo=(1)
+# ERROR at          19:xo=(4) yo=(3)!=expect xo=(4), yo=(1)
+# ERROR at          20:xo=(5) yo=(3)!=expect xo=(5), yo=(1)
+# ERROR at          21:xo=(6) yo=(3)!=expect xo=(6), yo=(1)
+# ERROR at          22:xo=(7) yo=(3)!=expect xo=(7), yo=(1)
+# ERROR at          23:xo=(0) yo=(3)!=expect xo=(1), yo=(2)
+# ERROR at          24:xo=(1) yo=(3)!=expect xo=(2), yo=(2)
+# ERROR at          25:xo=(2) yo=(3)!=expect xo=(3), yo=(2)
+# ERROR at          26:xo=(3) yo=(3)!=expect xo=(4), yo=(2)
+# ERROR at          27:xo=(4) yo=(3)!=expect xo=(1), yo=(3)
+# ---------------------------------------------
+# There are          28 errors!
+# ---------------------------------------------
+# ---------------------------------------------
+# Total delay:       67000 ns
+# ---------------------------------------------
+# ** Note: $finish    : C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(146)
+#    Time: 6900 ns  Iteration: 1  Instance: /test
+# 1
+# Break in Module test at C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v line 146
+# Compile of testfixture.v was successful.
+# Compile of triangle.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart -f
+# Closing VCD file "dump.vcd"
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.test
+# Loading work.test
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.triangle
+# Loading work.triangle
+run -all
+# ** Error: (vsim-PLI-3826) C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(40): $dumpfile : This task should be called prior to the $dumpvars
+# 
+# task.  The $dumpfile task will be ignored.
+# 
+#         Region: /test
+# 
+# ****** START to VERIFY the Triangel Rendering Enginen OPERATION ******
+# 
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(4, 1)
+# (x3, y3)=(1, 7)
+# ERROR at           0:xo=(2) yo=(3)!=expect xo=(1), yo=(1)
+# ERROR at           1:xo=(3) yo=(3)!=expect xo=(2), yo=(1)
+# ERROR at           2:xo=(4) yo=(3)!=expect xo=(3), yo=(1)
+# ERROR at           3:xo=(5) yo=(3)!=expect xo=(4), yo=(1)
+# ERROR at           4:xo=(6) yo=(3)!=expect xo=(1), yo=(2)
+# ERROR at           5:xo=(2) yo=(4)!=expect xo=(2), yo=(2)
+# ERROR at           6:xo=(3) yo=(4)!=expect xo=(3), yo=(2)
+# ERROR at           7:xo=(4) yo=(4)!=expect xo=(1), yo=(3)
+# ERROR at           8:xo=(5) yo=(4)!=expect xo=(2), yo=(3)
+# ERROR at           9:xo=(6) yo=(4)!=expect xo=(3), yo=(3)
+# ERROR at          10:xo=(7) yo=(4)!=expect xo=(1), yo=(4)
+# ERROR at          11:xo=(2) yo=(5)!=expect xo=(2), yo=(4)
+# ERROR at          12:xo=(3) yo=(5)!=expect xo=(1), yo=(5)
+# ERROR at          13:xo=(4) yo=(5)!=expect xo=(2), yo=(5)
+# ERROR at          14:xo=(5) yo=(5)!=expect xo=(1), yo=(6)
+# ERROR at          15:xo=(6) yo=(5)!=expect xo=(1), yo=(7)
+# ERROR at          16:xo=(7) yo=(5)!=expect xo=(1), yo=(1)
+# ERROR at          17:xo=(0) yo=(5)!=expect xo=(2), yo=(1)
+# ERROR at          18:xo=(1) yo=(5)!=expect xo=(3), yo=(1)
+# ERROR at          19:xo=(2) yo=(5)!=expect xo=(4), yo=(1)
+# ERROR at          20:xo=(3) yo=(5)!=expect xo=(5), yo=(1)
+# ERROR at          21:xo=(4) yo=(5)!=expect xo=(6), yo=(1)
+# ERROR at          22:xo=(5) yo=(5)!=expect xo=(7), yo=(1)
+# ERROR at          23:xo=(6) yo=(5)!=expect xo=(1), yo=(2)
+# ERROR at          24:xo=(7) yo=(5)!=expect xo=(2), yo=(2)
+# ERROR at          25:xo=(0) yo=(5)!=expect xo=(3), yo=(2)
+# ERROR at          26:xo=(1) yo=(5)!=expect xo=(4), yo=(2)
+# ERROR at          27:xo=(2) yo=(5)!=expect xo=(1), yo=(3)
+# ---------------------------------------------
+# There are          28 errors!
+# ---------------------------------------------
+# ---------------------------------------------
+# Total delay:       71000 ns
+# ---------------------------------------------
+# ** Note: $finish    : C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(146)
+#    Time: 7300 ns  Iteration: 1  Instance: /test
+# 1
+# Break in Module test at C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v line 146
+# Compile of testfixture.v was successful.
+# Compile of triangle.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart -f
+# Closing VCD file "dump.vcd"
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.test
+# Loading work.test
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.triangle
+# Loading work.triangle
+run -all
+# ** Error: (vsim-PLI-3826) C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(40): $dumpfile : This task should be called prior to the $dumpvars
+# 
+# task.  The $dumpfile task will be ignored.
+# 
+#         Region: /test
+# 
+# ****** START to VERIFY the Triangel Rendering Enginen OPERATION ******
+# 
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(4, 1)
+# (x3, y3)=(1, 7)
+# ERROR at           0:xo=(2) yo=(3)!=expect xo=(1), yo=(1)
+# ERROR at           1:xo=(3) yo=(3)!=expect xo=(2), yo=(1)
+# ERROR at           2:xo=(4) yo=(3)!=expect xo=(3), yo=(1)
+# ERROR at           3:xo=(5) yo=(3)!=expect xo=(4), yo=(1)
+# ERROR at           4:xo=(6) yo=(3)!=expect xo=(1), yo=(2)
+# ERROR at           5:xo=(2) yo=(4)!=expect xo=(2), yo=(2)
+# ERROR at           6:xo=(3) yo=(4)!=expect xo=(3), yo=(2)
+# ERROR at           7:xo=(4) yo=(4)!=expect xo=(1), yo=(3)
+# ERROR at           8:xo=(5) yo=(4)!=expect xo=(2), yo=(3)
+# ERROR at           9:xo=(6) yo=(4)!=expect xo=(3), yo=(3)
+# ERROR at          10:xo=(7) yo=(4)!=expect xo=(1), yo=(4)
+# ERROR at          11:xo=(2) yo=(5)!=expect xo=(2), yo=(4)
+# ERROR at          12:xo=(3) yo=(5)!=expect xo=(1), yo=(5)
+# ERROR at          13:xo=(4) yo=(5)!=expect xo=(2), yo=(5)
+# ERROR at          14:xo=(5) yo=(5)!=expect xo=(1), yo=(6)
+# ERROR at          15:xo=(6) yo=(5)!=expect xo=(1), yo=(7)
+# ERROR at          16:xo=(7) yo=(5)!=expect xo=(1), yo=(1)
+# ERROR at          17:xo=(0) yo=(5)!=expect xo=(2), yo=(1)
+# ERROR at          18:xo=(1) yo=(5)!=expect xo=(3), yo=(1)
+# ERROR at          19:xo=(2) yo=(5)!=expect xo=(4), yo=(1)
+# ERROR at          20:xo=(3) yo=(5)!=expect xo=(5), yo=(1)
+# ERROR at          21:xo=(4) yo=(5)!=expect xo=(6), yo=(1)
+# ERROR at          22:xo=(5) yo=(5)!=expect xo=(7), yo=(1)
+# ERROR at          23:xo=(6) yo=(5)!=expect xo=(1), yo=(2)
+# ERROR at          24:xo=(7) yo=(5)!=expect xo=(2), yo=(2)
+# ERROR at          25:xo=(0) yo=(5)!=expect xo=(3), yo=(2)
+# ERROR at          26:xo=(1) yo=(5)!=expect xo=(4), yo=(2)
+# ERROR at          27:xo=(2) yo=(5)!=expect xo=(1), yo=(3)
+# ---------------------------------------------
+# There are          28 errors!
+# ---------------------------------------------
+# ---------------------------------------------
+# Total delay:       71000 ns
+# ---------------------------------------------
+# ** Note: $finish    : C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(146)
+#    Time: 7300 ns  Iteration: 1  Instance: /test
+# 1
+# Break in Module test at C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v line 146
+# Compile of testfixture.v was successful.
+# Compile of triangle.v failed with 1 errors.
+# 2 compiles, 1 failed with 1 error. 
+restart -f
+# Closing VCD file "dump.vcd"
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.test
+# Loading work.test
+run -all
+# ** Error: (vsim-PLI-3826) C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(40): $dumpfile : This task should be called prior to the $dumpvars
+# 
+# task.  The $dumpfile task will be ignored.
+# 
+#         Region: /test
+# 
+# ****** START to VERIFY the Triangel Rendering Enginen OPERATION ******
+# 
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(4, 1)
+# (x3, y3)=(1, 7)
+# ERROR at           0:xo=(2) yo=(3)!=expect xo=(1), yo=(1)
+# ERROR at           1:xo=(3) yo=(3)!=expect xo=(2), yo=(1)
+# ERROR at           2:xo=(4) yo=(3)!=expect xo=(3), yo=(1)
+# ERROR at           3:xo=(5) yo=(3)!=expect xo=(4), yo=(1)
+# ERROR at           4:xo=(6) yo=(3)!=expect xo=(1), yo=(2)
+# ERROR at           5:xo=(2) yo=(4)!=expect xo=(2), yo=(2)
+# ERROR at           6:xo=(3) yo=(4)!=expect xo=(3), yo=(2)
+# ERROR at           7:xo=(4) yo=(4)!=expect xo=(1), yo=(3)
+# ERROR at           8:xo=(5) yo=(4)!=expect xo=(2), yo=(3)
+# ERROR at           9:xo=(6) yo=(4)!=expect xo=(3), yo=(3)
+# ERROR at          10:xo=(7) yo=(4)!=expect xo=(1), yo=(4)
+# ERROR at          11:xo=(2) yo=(5)!=expect xo=(2), yo=(4)
+# ERROR at          12:xo=(3) yo=(5)!=expect xo=(1), yo=(5)
+# ERROR at          13:xo=(4) yo=(5)!=expect xo=(2), yo=(5)
+# ERROR at          14:xo=(5) yo=(5)!=expect xo=(1), yo=(6)
+# ERROR at          15:xo=(6) yo=(5)!=expect xo=(1), yo=(7)
+# ERROR at          16:xo=(7) yo=(5)!=expect xo=(1), yo=(1)
+# ERROR at          17:xo=(0) yo=(5)!=expect xo=(2), yo=(1)
+# ERROR at          18:xo=(1) yo=(5)!=expect xo=(3), yo=(1)
+# ERROR at          19:xo=(2) yo=(5)!=expect xo=(4), yo=(1)
+# ERROR at          20:xo=(3) yo=(5)!=expect xo=(5), yo=(1)
+# ERROR at          21:xo=(4) yo=(5)!=expect xo=(6), yo=(1)
+# ERROR at          22:xo=(5) yo=(5)!=expect xo=(7), yo=(1)
+# ERROR at          23:xo=(6) yo=(5)!=expect xo=(1), yo=(2)
+# ERROR at          24:xo=(7) yo=(5)!=expect xo=(2), yo=(2)
+# ERROR at          25:xo=(0) yo=(5)!=expect xo=(3), yo=(2)
+# ERROR at          26:xo=(1) yo=(5)!=expect xo=(4), yo=(2)
+# ERROR at          27:xo=(2) yo=(5)!=expect xo=(1), yo=(3)
+# ---------------------------------------------
+# There are          28 errors!
+# ---------------------------------------------
+# ---------------------------------------------
+# Total delay:       71000 ns
+# ---------------------------------------------
+# ** Note: $finish    : C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(146)
+#    Time: 7300 ns  Iteration: 1  Instance: /test
+# 1
+# Break in Module test at C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v line 146
+# Compile of testfixture.v was successful.
+# Compile of triangle.v failed with 1 errors.
+# 2 compiles, 1 failed with 1 error. 
+# Compile of testfixture.v was successful.
+# Compile of triangle.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart -f
+# Closing VCD file "dump.vcd"
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.test
+# Loading work.test
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.triangle
+# Loading work.triangle
+run -all
+# ** Error: (vsim-PLI-3826) C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(40): $dumpfile : This task should be called prior to the $dumpvars
+# 
+# task.  The $dumpfile task will be ignored.
+# 
+#         Region: /test
+# 
+# ****** START to VERIFY the Triangel Rendering Enginen OPERATION ******
+# 
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(4, 1)
+# (x3, y3)=(1, 7)
+# ERROR at           0:xo=(7) yo=(2)!=expect xo=(1), yo=(1)
+# ERROR at           1:xo=(0) yo=(2)!=expect xo=(2), yo=(1)
+# ERROR at           2:xo=(1) yo=(2)!=expect xo=(3), yo=(1)
+# ERROR at           3:xo=(2) yo=(2)!=expect xo=(4), yo=(1)
+# ERROR at           4:xo=(3) yo=(2)!=expect xo=(1), yo=(2)
+# ERROR at           5:xo=(4) yo=(2)!=expect xo=(2), yo=(2)
+# ERROR at           6:xo=(5) yo=(2)!=expect xo=(3), yo=(2)
+# ERROR at           7:xo=(6) yo=(2)!=expect xo=(1), yo=(3)
+# ERROR at           8:xo=(7) yo=(2)!=expect xo=(2), yo=(3)
+# ERROR at           9:xo=(0) yo=(2)!=expect xo=(3), yo=(3)
+# ERROR at          10:xo=(1) yo=(2)!=expect xo=(1), yo=(4)
+# ERROR at          11:xo=(2) yo=(2)!=expect xo=(2), yo=(4)
+# ERROR at          12:xo=(3) yo=(2)!=expect xo=(1), yo=(5)
+# ERROR at          13:xo=(4) yo=(2)!=expect xo=(2), yo=(5)
+# ERROR at          14:xo=(5) yo=(2)!=expect xo=(1), yo=(6)
+# ERROR at          15:xo=(6) yo=(2)!=expect xo=(1), yo=(7)
+# ERROR at          16:xo=(7) yo=(2)!=expect xo=(1), yo=(1)
+# ERROR at          17:xo=(0) yo=(2)!=expect xo=(2), yo=(1)
+# ERROR at          18:xo=(1) yo=(2)!=expect xo=(3), yo=(1)
+# ERROR at          19:xo=(2) yo=(2)!=expect xo=(4), yo=(1)
+# ERROR at          20:xo=(3) yo=(2)!=expect xo=(5), yo=(1)
+# ERROR at          21:xo=(4) yo=(2)!=expect xo=(6), yo=(1)
+# ERROR at          22:xo=(5) yo=(2)!=expect xo=(7), yo=(1)
+# ERROR at          23:xo=(6) yo=(2)!=expect xo=(1), yo=(2)
+# ERROR at          24:xo=(7) yo=(2)!=expect xo=(2), yo=(2)
+# ERROR at          25:xo=(0) yo=(2)!=expect xo=(3), yo=(2)
+# ERROR at          26:xo=(1) yo=(2)!=expect xo=(4), yo=(2)
+# ERROR at          27:xo=(2) yo=(2)!=expect xo=(1), yo=(3)
+# ---------------------------------------------
+# There are          28 errors!
+# ---------------------------------------------
+# ---------------------------------------------
+# Total delay:       65000 ns
+# ---------------------------------------------
+# ** Note: $finish    : C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(146)
+#    Time: 6700 ns  Iteration: 1  Instance: /test
+# 1
+# Break in Module test at C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v line 146
+# Compile of testfixture.v was successful.
+# Compile of triangle.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart -f
+# Closing VCD file "dump.vcd"
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.test
+# Loading work.test
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.triangle
+# Loading work.triangle
+run -all
+# ** Error: (vsim-PLI-3826) C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(40): $dumpfile : This task should be called prior to the $dumpvars
+# 
+# task.  The $dumpfile task will be ignored.
+# 
+#         Region: /test
+# 
+# ****** START to VERIFY the Triangel Rendering Enginen OPERATION ******
+# 
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(4, 1)
+# (x3, y3)=(1, 7)
+# ERROR at           0:xo=(2) yo=(1)!=expect xo=(1), yo=(1)
+# ERROR at           1:xo=(3) yo=(1)!=expect xo=(2), yo=(1)
+# ERROR at           2:xo=(4) yo=(1)!=expect xo=(3), yo=(1)
+# ERROR at           3:xo=(5) yo=(1)!=expect xo=(4), yo=(1)
+# ERROR at           4:xo=(6) yo=(1)!=expect xo=(1), yo=(2)
+# ERROR at           5:xo=(7) yo=(1)!=expect xo=(2), yo=(2)
+# ERROR at           6:xo=(0) yo=(1)!=expect xo=(3), yo=(2)
+# ERROR at           7:xo=(1) yo=(1)!=expect xo=(1), yo=(3)
+# ERROR at           8:xo=(2) yo=(1)!=expect xo=(2), yo=(3)
+# ERROR at           9:xo=(3) yo=(1)!=expect xo=(3), yo=(3)
+# ERROR at          10:xo=(4) yo=(1)!=expect xo=(1), yo=(4)
+# ERROR at          11:xo=(5) yo=(1)!=expect xo=(2), yo=(4)
+# ERROR at          12:xo=(6) yo=(1)!=expect xo=(1), yo=(5)
+# ERROR at          13:xo=(7) yo=(1)!=expect xo=(2), yo=(5)
+# ERROR at          14:xo=(0) yo=(1)!=expect xo=(1), yo=(6)
+# ERROR at          15:xo=(1) yo=(1)!=expect xo=(1), yo=(7)
+# ERROR at          16:xo=(2) yo=(1)!=expect xo=(1), yo=(1)
+# ERROR at          17:xo=(3) yo=(1)!=expect xo=(2), yo=(1)
+# ERROR at          18:xo=(4) yo=(1)!=expect xo=(3), yo=(1)
+# ERROR at          19:xo=(5) yo=(1)!=expect xo=(4), yo=(1)
+# ERROR at          20:xo=(6) yo=(1)!=expect xo=(5), yo=(1)
+# ERROR at          21:xo=(7) yo=(1)!=expect xo=(6), yo=(1)
+# ERROR at          22:xo=(0) yo=(1)!=expect xo=(7), yo=(1)
+# ERROR at          23:xo=(1) yo=(1)!=expect xo=(1), yo=(2)
+# ERROR at          24:xo=(2) yo=(1)!=expect xo=(2), yo=(2)
+# ERROR at          25:xo=(3) yo=(1)!=expect xo=(3), yo=(2)
+# ERROR at          26:xo=(4) yo=(1)!=expect xo=(4), yo=(2)
+# ERROR at          27:xo=(5) yo=(1)!=expect xo=(1), yo=(3)
+# ---------------------------------------------
+# There are          28 errors!
+# ---------------------------------------------
+# ---------------------------------------------
+# Total delay:       95000 ns
+# ---------------------------------------------
+# ** Note: $finish    : C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(146)
+#    Time: 9700 ns  Iteration: 1  Instance: /test
+# 1
+# Break in Module test at C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v line 146
+# Compile of testfixture.v was successful.
+# Compile of triangle.v failed with 3 errors.
+# 2 compiles, 1 failed with 3 errors. 
+# Compile of testfixture.v was successful.
+# Compile of triangle.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart -f
+# Closing VCD file "dump.vcd"
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.test
+# Loading work.test
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.triangle
+# Loading work.triangle
+run -all
+# ** Error: (vsim-PLI-3826) C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(40): $dumpfile : This task should be called prior to the $dumpvars
+# 
+# task.  The $dumpfile task will be ignored.
+# 
+#         Region: /test
+# 
+# ****** START to VERIFY the Triangel Rendering Enginen OPERATION ******
+# 
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(4, 1)
+# (x3, y3)=(1, 7)
+# ERROR at           0:xo=(2) yo=(6)!=expect xo=(1), yo=(1)
+# ERROR at           1:xo=(3) yo=(6)!=expect xo=(2), yo=(1)
+# ERROR at           2:xo=(2) yo=(7)!=expect xo=(3), yo=(1)
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(7, 1)
+# (x3, y3)=(1, 3)
+# ERROR at           3:xo=(2) yo=(3)!=expect xo=(4), yo=(1)
+# Break key hit 
+# Break in Module triangle at C:/Users/USER/Desktop/ic design/ICC 2006/triangle.v line 75
+# Compile of testfixture.v was successful.
+# Compile of triangle.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart -f
+# Closing VCD file "dump.vcd"
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.test
+# Loading work.test
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.triangle
+# Loading work.triangle
+run -all
+# ** Error: (vsim-PLI-3826) C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(40): $dumpfile : This task should be called prior to the $dumpvars
+# 
+# task.  The $dumpfile task will be ignored.
+# 
+#         Region: /test
+# 
+# ****** START to VERIFY the Triangel Rendering Enginen OPERATION ******
+# 
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(4, 1)
+# (x3, y3)=(1, 7)
+# ERROR at           0:xo=(2) yo=(6)!=expect xo=(1), yo=(1)
+# ERROR at           1:xo=(3) yo=(6)!=expect xo=(2), yo=(1)
+# ERROR at           2:xo=(2) yo=(7)!=expect xo=(3), yo=(1)
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(7, 1)
+# (x3, y3)=(1, 3)
+# ERROR at           3:xo=(2) yo=(3)!=expect xo=(4), yo=(1)
+# Break key hit 
+# Break in Module test at C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v line 65
+# Compile of testfixture.v was successful.
+# Compile of triangle.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart -f
+# Closing VCD file "dump.vcd"
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.test
+# Loading work.test
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.triangle
+# Loading work.triangle
+run -all
+# ** Error: (vsim-PLI-3826) C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(40): $dumpfile : This task should be called prior to the $dumpvars
+# 
+# task.  The $dumpfile task will be ignored.
+# 
+#         Region: /test
+# 
+# ****** START to VERIFY the Triangel Rendering Enginen OPERATION ******
+# 
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(4, 1)
+# (x3, y3)=(1, 7)
+# ERROR at           4:xo=(5) yo=(2)!=expect xo=(1), yo=(2)
+# ERROR at           5:xo=(2) yo=(6)!=expect xo=(2), yo=(2)
+# ERROR at           6:xo=(3) yo=(6)!=expect xo=(3), yo=(2)
+# ERROR at           7:xo=(2) yo=(7)!=expect xo=(1), yo=(3)
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(7, 1)
+# (x3, y3)=(1, 3)
+# ERROR at           8:xo=(1) yo=(1)!=expect xo=(2), yo=(3)
+# ERROR at           9:xo=(2) yo=(1)!=expect xo=(3), yo=(3)
+# ERROR at          10:xo=(3) yo=(1)!=expect xo=(1), yo=(4)
+# ERROR at          11:xo=(4) yo=(1)!=expect xo=(2), yo=(4)
+# ERROR at          12:xo=(5) yo=(1)!=expect xo=(1), yo=(5)
+# ERROR at          13:xo=(6) yo=(1)!=expect xo=(2), yo=(5)
+# ERROR at          14:xo=(7) yo=(1)!=expect xo=(1), yo=(6)
+# ERROR at          15:xo=(0) yo=(2)!=expect xo=(1), yo=(7)
+# ERROR at          16:xo=(2) yo=(3)!=expect xo=(1), yo=(1)
+# Break key hit 
+# Break in Module test at C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v line 65
+restart -f
+# Closing VCD file "dump.vcd"
+run -all
+# ** Error: (vsim-PLI-3826) C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(40): $dumpfile : This task should be called prior to the $dumpvars
+# 
+# task.  The $dumpfile task will be ignored.
+# 
+#         Region: /test
+# 
+# ****** START to VERIFY the Triangel Rendering Enginen OPERATION ******
+# 
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(4, 1)
+# (x3, y3)=(1, 7)
+# ERROR at           4:xo=(5) yo=(2)!=expect xo=(1), yo=(2)
+# ERROR at           5:xo=(2) yo=(6)!=expect xo=(2), yo=(2)
+# ERROR at           6:xo=(3) yo=(6)!=expect xo=(3), yo=(2)
+# ERROR at           7:xo=(2) yo=(7)!=expect xo=(1), yo=(3)
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(7, 1)
+# (x3, y3)=(1, 3)
+# ERROR at           8:xo=(1) yo=(1)!=expect xo=(2), yo=(3)
+# ERROR at           9:xo=(2) yo=(1)!=expect xo=(3), yo=(3)
+# ERROR at          10:xo=(3) yo=(1)!=expect xo=(1), yo=(4)
+# ERROR at          11:xo=(4) yo=(1)!=expect xo=(2), yo=(4)
+# ERROR at          12:xo=(5) yo=(1)!=expect xo=(1), yo=(5)
+# ERROR at          13:xo=(6) yo=(1)!=expect xo=(2), yo=(5)
+# ERROR at          14:xo=(7) yo=(1)!=expect xo=(1), yo=(6)
+# ERROR at          15:xo=(0) yo=(2)!=expect xo=(1), yo=(7)
+# ERROR at          16:xo=(2) yo=(3)!=expect xo=(1), yo=(1)
+# Break key hit 
+# Break in Module test at C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v line 65
+# Compile of testfixture.v was successful.
+# Compile of triangle.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart -f
+# Closing VCD file "dump.vcd"
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.test
+# Loading work.test
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.triangle
+# Loading work.triangle
+run -all
+# ** Error: (vsim-PLI-3826) C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(40): $dumpfile : This task should be called prior to the $dumpvars
+# 
+# task.  The $dumpfile task will be ignored.
+# 
+#         Region: /test
+# 
+# ****** START to VERIFY the Triangel Rendering Enginen OPERATION ******
+# 
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(4, 1)
+# (x3, y3)=(1, 7)
+# ERROR at           4:xo=(2) yo=(6)!=expect xo=(1), yo=(2)
+# ERROR at           5:xo=(3) yo=(6)!=expect xo=(2), yo=(2)
+# ERROR at           6:xo=(2) yo=(7)!=expect xo=(3), yo=(2)
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(7, 1)
+# (x3, y3)=(1, 3)
+# ERROR at           7:xo=(1) yo=(1)!=expect xo=(1), yo=(3)
+# ERROR at           8:xo=(2) yo=(1)!=expect xo=(2), yo=(3)
+# ERROR at           9:xo=(3) yo=(1)!=expect xo=(3), yo=(3)
+# ERROR at          10:xo=(4) yo=(1)!=expect xo=(1), yo=(4)
+# ERROR at          11:xo=(5) yo=(1)!=expect xo=(2), yo=(4)
+# ERROR at          12:xo=(6) yo=(1)!=expect xo=(1), yo=(5)
+# ERROR at          13:xo=(7) yo=(1)!=expect xo=(2), yo=(5)
+# ERROR at          14:xo=(2) yo=(3)!=expect xo=(1), yo=(6)
+# Break key hit 
+# Break in Module test at C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v line 65
+# Compile of testfixture.v was successful.
+# Compile of triangle.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart -f
+# Closing VCD file "dump.vcd"
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.test
+# Loading work.test
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.triangle
+# Loading work.triangle
+run -all
+# ** Error: (vsim-PLI-3826) C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(40): $dumpfile : This task should be called prior to the $dumpvars
+# 
+# task.  The $dumpfile task will be ignored.
+# 
+#         Region: /test
+# 
+# ****** START to VERIFY the Triangel Rendering Enginen OPERATION ******
+# 
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(4, 1)
+# (x3, y3)=(1, 7)
+# ERROR at           4:xo=(7) yo=(1)!=expect xo=(1), yo=(2)
+# ERROR at           5:xo=(0) yo=(1)!=expect xo=(2), yo=(2)
+# ERROR at           6:xo=(1) yo=(1)!=expect xo=(3), yo=(2)
+# ERROR at           7:xo=(2) yo=(1)!=expect xo=(1), yo=(3)
+# ERROR at           8:xo=(3) yo=(1)!=expect xo=(2), yo=(3)
+# ERROR at           9:xo=(4) yo=(1)!=expect xo=(3), yo=(3)
+# ERROR at          10:xo=(5) yo=(1)!=expect xo=(1), yo=(4)
+# ERROR at          11:xo=(6) yo=(1)!=expect xo=(2), yo=(4)
+# ERROR at          12:xo=(7) yo=(1)!=expect xo=(1), yo=(5)
+# ERROR at          13:xo=(0) yo=(1)!=expect xo=(2), yo=(5)
+# ERROR at          14:xo=(1) yo=(1)!=expect xo=(1), yo=(6)
+# ERROR at          15:xo=(2) yo=(1)!=expect xo=(1), yo=(7)
+# ERROR at          16:xo=(3) yo=(1)!=expect xo=(1), yo=(1)
+# ERROR at          17:xo=(4) yo=(1)!=expect xo=(2), yo=(1)
+# ERROR at          18:xo=(5) yo=(1)!=expect xo=(3), yo=(1)
+# ERROR at          19:xo=(6) yo=(1)!=expect xo=(4), yo=(1)
+# ERROR at          20:xo=(7) yo=(1)!=expect xo=(5), yo=(1)
+# ERROR at          21:xo=(0) yo=(1)!=expect xo=(6), yo=(1)
+# ERROR at          22:xo=(1) yo=(1)!=expect xo=(7), yo=(1)
+# ERROR at          23:xo=(2) yo=(1)!=expect xo=(1), yo=(2)
+# ERROR at          24:xo=(3) yo=(1)!=expect xo=(2), yo=(2)
+# ERROR at          25:xo=(4) yo=(1)!=expect xo=(3), yo=(2)
+# ERROR at          26:xo=(5) yo=(1)!=expect xo=(4), yo=(2)
+# ERROR at          27:xo=(6) yo=(1)!=expect xo=(1), yo=(3)
+# ---------------------------------------------
+# There are          24 errors!
+# ---------------------------------------------
+# ---------------------------------------------
+# Total delay:       57000 ns
+# ---------------------------------------------
+# ** Note: $finish    : C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(146)
+#    Time: 5900 ns  Iteration: 1  Instance: /test
+# 1
+# Break in Module test at C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v line 146
+add wave -position insertpoint  \
+sim:/test/top/change
+add wave -position insertpoint  \
+sim:/test/top/e
+# Compile of testfixture.v was successful.
+# Compile of triangle.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart -f
+# Closing VCD file "dump.vcd"
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.test
+# Loading work.test
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.triangle
+# Loading work.triangle
+run -all
+# ** Error: (vsim-PLI-3826) C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(40): $dumpfile : This task should be called prior to the $dumpvars
+# 
+# task.  The $dumpfile task will be ignored.
+# 
+#         Region: /test
+# 
+# ****** START to VERIFY the Triangel Rendering Enginen OPERATION ******
+# 
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(4, 1)
+# (x3, y3)=(1, 7)
+# ERROR at           4:xo=(2) yo=(1)!=expect xo=(1), yo=(2)
+# ERROR at           5:xo=(3) yo=(1)!=expect xo=(2), yo=(2)
+# ERROR at           6:xo=(4) yo=(1)!=expect xo=(3), yo=(2)
+# ERROR at           7:xo=(5) yo=(1)!=expect xo=(1), yo=(3)
+# ERROR at           8:xo=(6) yo=(1)!=expect xo=(2), yo=(3)
+# ERROR at           9:xo=(7) yo=(1)!=expect xo=(3), yo=(3)
+# ERROR at          10:xo=(0) yo=(1)!=expect xo=(1), yo=(4)
+# ERROR at          11:xo=(1) yo=(1)!=expect xo=(2), yo=(4)
+# ERROR at          12:xo=(2) yo=(1)!=expect xo=(1), yo=(5)
+# ERROR at          13:xo=(3) yo=(1)!=expect xo=(2), yo=(5)
+# ERROR at          14:xo=(4) yo=(1)!=expect xo=(1), yo=(6)
+# ERROR at          15:xo=(5) yo=(1)!=expect xo=(1), yo=(7)
+# ERROR at          16:xo=(6) yo=(1)!=expect xo=(1), yo=(1)
+# ERROR at          17:xo=(7) yo=(1)!=expect xo=(2), yo=(1)
+# ERROR at          18:xo=(0) yo=(1)!=expect xo=(3), yo=(1)
+# ERROR at          19:xo=(1) yo=(1)!=expect xo=(4), yo=(1)
+# ERROR at          20:xo=(2) yo=(1)!=expect xo=(5), yo=(1)
+# ERROR at          21:xo=(3) yo=(1)!=expect xo=(6), yo=(1)
+# ERROR at          22:xo=(4) yo=(1)!=expect xo=(7), yo=(1)
+# ERROR at          23:xo=(5) yo=(1)!=expect xo=(1), yo=(2)
+# ERROR at          24:xo=(6) yo=(1)!=expect xo=(2), yo=(2)
+# ERROR at          25:xo=(7) yo=(1)!=expect xo=(3), yo=(2)
+# ERROR at          26:xo=(0) yo=(1)!=expect xo=(4), yo=(2)
+# ERROR at          27:xo=(1) yo=(1)!=expect xo=(1), yo=(3)
+# ---------------------------------------------
+# There are          24 errors!
+# ---------------------------------------------
+# ---------------------------------------------
+# Total delay:       57000 ns
+# ---------------------------------------------
+# ** Note: $finish    : C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(146)
+#    Time: 5900 ns  Iteration: 1  Instance: /test
+# 1
+# Break in Module test at C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v line 146
+restart -f
+# Closing VCD file "dump.vcd"
+run -all
+# ** Error: (vsim-PLI-3826) C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(40): $dumpfile : This task should be called prior to the $dumpvars
+# 
+# task.  The $dumpfile task will be ignored.
+# 
+#         Region: /test
+# 
+# ****** START to VERIFY the Triangel Rendering Enginen OPERATION ******
+# 
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(4, 1)
+# (x3, y3)=(1, 7)
+# ERROR at           4:xo=(2) yo=(1)!=expect xo=(1), yo=(2)
+# ERROR at           5:xo=(3) yo=(1)!=expect xo=(2), yo=(2)
+# ERROR at           6:xo=(4) yo=(1)!=expect xo=(3), yo=(2)
+# ERROR at           7:xo=(5) yo=(1)!=expect xo=(1), yo=(3)
+# ERROR at           8:xo=(6) yo=(1)!=expect xo=(2), yo=(3)
+# ERROR at           9:xo=(7) yo=(1)!=expect xo=(3), yo=(3)
+# ERROR at          10:xo=(0) yo=(1)!=expect xo=(1), yo=(4)
+# ERROR at          11:xo=(1) yo=(1)!=expect xo=(2), yo=(4)
+# ERROR at          12:xo=(2) yo=(1)!=expect xo=(1), yo=(5)
+# ERROR at          13:xo=(3) yo=(1)!=expect xo=(2), yo=(5)
+# ERROR at          14:xo=(4) yo=(1)!=expect xo=(1), yo=(6)
+# ERROR at          15:xo=(5) yo=(1)!=expect xo=(1), yo=(7)
+# ERROR at          16:xo=(6) yo=(1)!=expect xo=(1), yo=(1)
+# ERROR at          17:xo=(7) yo=(1)!=expect xo=(2), yo=(1)
+# ERROR at          18:xo=(0) yo=(1)!=expect xo=(3), yo=(1)
+# ERROR at          19:xo=(1) yo=(1)!=expect xo=(4), yo=(1)
+# ERROR at          20:xo=(2) yo=(1)!=expect xo=(5), yo=(1)
+# ERROR at          21:xo=(3) yo=(1)!=expect xo=(6), yo=(1)
+# ERROR at          22:xo=(4) yo=(1)!=expect xo=(7), yo=(1)
+# ERROR at          23:xo=(5) yo=(1)!=expect xo=(1), yo=(2)
+# ERROR at          24:xo=(6) yo=(1)!=expect xo=(2), yo=(2)
+# ERROR at          25:xo=(7) yo=(1)!=expect xo=(3), yo=(2)
+# ERROR at          26:xo=(0) yo=(1)!=expect xo=(4), yo=(2)
+# ERROR at          27:xo=(1) yo=(1)!=expect xo=(1), yo=(3)
+# ---------------------------------------------
+# There are          24 errors!
+# ---------------------------------------------
+# ---------------------------------------------
+# Total delay:       57000 ns
+# ---------------------------------------------
+# ** Note: $finish    : C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(146)
+#    Time: 5900 ns  Iteration: 1  Instance: /test
+# 1
+# Break in Module test at C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v line 146
+# msg=invalid command name ".main_pane.dataflow.interior.cs.body.pw.df.c.nlv" 
+# Compile of testfixture.v was successful.
+# Compile of triangle.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart -f
+# Closing VCD file "dump.vcd"
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.test
+# Loading work.test
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.triangle
+# Loading work.triangle
+run -all
+# ** Error: (vsim-PLI-3826) C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(40): $dumpfile : This task should be called prior to the $dumpvars
+# 
+# task.  The $dumpfile task will be ignored.
+# 
+#         Region: /test
+# 
+# ****** START to VERIFY the Triangel Rendering Enginen OPERATION ******
+# 
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(4, 1)
+# (x3, y3)=(1, 7)
+# ERROR at           4:xo=(2) yo=(6)!=expect xo=(1), yo=(2)
+# ERROR at           5:xo=(3) yo=(6)!=expect xo=(2), yo=(2)
+# ERROR at           6:xo=(2) yo=(7)!=expect xo=(3), yo=(2)
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(7, 1)
+# (x3, y3)=(1, 3)
+# ERROR at           7:xo=(1) yo=(1)!=expect xo=(1), yo=(3)
+# ERROR at           8:xo=(2) yo=(1)!=expect xo=(2), yo=(3)
+# ERROR at           9:xo=(3) yo=(1)!=expect xo=(3), yo=(3)
+# ERROR at          10:xo=(4) yo=(1)!=expect xo=(1), yo=(4)
+# ERROR at          11:xo=(5) yo=(1)!=expect xo=(2), yo=(4)
+# ERROR at          12:xo=(6) yo=(1)!=expect xo=(1), yo=(5)
+# ERROR at          13:xo=(7) yo=(1)!=expect xo=(2), yo=(5)
+# ERROR at          14:xo=(2) yo=(3)!=expect xo=(1), yo=(6)
+# Break key hit 
+# Break in Module test at C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v line 65
+add wave -position insertpoint  \
+sim:/test/top/c
+add wave -position insertpoint  \
+sim:/test/top/d
+# Compile of testfixture.v was successful.
+# Compile of triangle.v failed with 1 errors.
+# 2 compiles, 1 failed with 1 error. 
+# Compile of testfixture.v was successful.
+# Compile of triangle.v failed with 1 errors.
+# 2 compiles, 1 failed with 1 error. 
+# Compile of testfixture.v was successful.
+# Compile of triangle.v failed with 1 errors.
+# 2 compiles, 1 failed with 1 error. 
+# Compile of testfixture.v was successful.
+# Compile of triangle.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart -f
+# Closing VCD file "dump.vcd"
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.test
+# Loading work.test
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.triangle
+# Loading work.triangle
+run -all
+# ** Error: (vsim-PLI-3826) C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(40): $dumpfile : This task should be called prior to the $dumpvars
+# 
+# task.  The $dumpfile task will be ignored.
+# 
+#         Region: /test
+# 
+# ****** START to VERIFY the Triangel Rendering Enginen OPERATION ******
+# 
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(4, 1)
+# (x3, y3)=(1, 7)
+# ERROR at           4:xo=(2) yo=(2)!=expect xo=(1), yo=(2)
+# ERROR at           5:xo=(3) yo=(2)!=expect xo=(2), yo=(2)
+# ERROR at           6:xo=(4) yo=(2)!=expect xo=(3), yo=(2)
+# ERROR at           7:xo=(5) yo=(2)!=expect xo=(1), yo=(3)
+# ERROR at           8:xo=(6) yo=(2)!=expect xo=(2), yo=(3)
+# ERROR at           9:xo=(7) yo=(2)!=expect xo=(3), yo=(3)
+# ERROR at          10:xo=(0) yo=(2)!=expect xo=(1), yo=(4)
+# ERROR at          11:xo=(1) yo=(2)!=expect xo=(2), yo=(4)
+# ERROR at          12:xo=(2) yo=(2)!=expect xo=(1), yo=(5)
+# ERROR at          13:xo=(3) yo=(2)!=expect xo=(2), yo=(5)
+# ERROR at          14:xo=(4) yo=(2)!=expect xo=(1), yo=(6)
+# ERROR at          15:xo=(5) yo=(2)!=expect xo=(1), yo=(7)
+# ERROR at          16:xo=(6) yo=(2)!=expect xo=(1), yo=(1)
+# ERROR at          17:xo=(7) yo=(2)!=expect xo=(2), yo=(1)
+# ERROR at          18:xo=(0) yo=(2)!=expect xo=(3), yo=(1)
+# ERROR at          19:xo=(1) yo=(2)!=expect xo=(4), yo=(1)
+# ERROR at          20:xo=(2) yo=(2)!=expect xo=(5), yo=(1)
+# ERROR at          21:xo=(3) yo=(2)!=expect xo=(6), yo=(1)
+# ERROR at          22:xo=(4) yo=(2)!=expect xo=(7), yo=(1)
+# ERROR at          23:xo=(5) yo=(2)!=expect xo=(1), yo=(2)
+# ERROR at          24:xo=(6) yo=(2)!=expect xo=(2), yo=(2)
+# ERROR at          25:xo=(7) yo=(2)!=expect xo=(3), yo=(2)
+# ERROR at          26:xo=(0) yo=(2)!=expect xo=(4), yo=(2)
+# ERROR at          27:xo=(1) yo=(2)!=expect xo=(1), yo=(3)
+# ---------------------------------------------
+# There are          24 errors!
+# ---------------------------------------------
+# ---------------------------------------------
+# Total delay:       58000 ns
+# ---------------------------------------------
+# ** Note: $finish    : C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(146)
+#    Time: 6 us  Iteration: 1  Instance: /test
+# 1
+# Break in Module test at C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v line 146
+# Compile of testfixture.v was successful.
+# Compile of triangle.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart -f
+# Closing VCD file "dump.vcd"
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.test
+# Loading work.test
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.triangle
+# Loading work.triangle
+run -all
+# ** Error: (vsim-PLI-3826) C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(40): $dumpfile : This task should be called prior to the $dumpvars
+# 
+# task.  The $dumpfile task will be ignored.
+# 
+#         Region: /test
+# 
+# ****** START to VERIFY the Triangel Rendering Enginen OPERATION ******
+# 
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(4, 1)
+# (x3, y3)=(1, 7)
+# ERROR at           0:xo=(0) yo=(1)!=expect xo=(1), yo=(1)
+# ERROR at           1:xo=(1) yo=(1)!=expect xo=(2), yo=(1)
+# ERROR at           2:xo=(2) yo=(1)!=expect xo=(3), yo=(1)
+# ERROR at           3:xo=(3) yo=(1)!=expect xo=(4), yo=(1)
+# ERROR at           4:xo=(4) yo=(1)!=expect xo=(1), yo=(2)
+# ERROR at           5:xo=(1) yo=(2)!=expect xo=(2), yo=(2)
+# ERROR at           6:xo=(2) yo=(2)!=expect xo=(3), yo=(2)
+# ERROR at           7:xo=(3) yo=(2)!=expect xo=(1), yo=(3)
+# ERROR at           8:xo=(4) yo=(2)!=expect xo=(2), yo=(3)
+# ERROR at           9:xo=(5) yo=(2)!=expect xo=(3), yo=(3)
+# ERROR at          10:xo=(6) yo=(2)!=expect xo=(1), yo=(4)
+# ERROR at          11:xo=(7) yo=(2)!=expect xo=(2), yo=(4)
+# ERROR at          12:xo=(0) yo=(2)!=expect xo=(1), yo=(5)
+# ERROR at          13:xo=(1) yo=(2)!=expect xo=(2), yo=(5)
+# ERROR at          14:xo=(2) yo=(2)!=expect xo=(1), yo=(6)
+# ERROR at          15:xo=(3) yo=(2)!=expect xo=(1), yo=(7)
+# ERROR at          16:xo=(4) yo=(2)!=expect xo=(1), yo=(1)
+# ERROR at          17:xo=(5) yo=(2)!=expect xo=(2), yo=(1)
+# ERROR at          18:xo=(6) yo=(2)!=expect xo=(3), yo=(1)
+# ERROR at          19:xo=(7) yo=(2)!=expect xo=(4), yo=(1)
+# ERROR at          20:xo=(0) yo=(2)!=expect xo=(5), yo=(1)
+# ERROR at          21:xo=(1) yo=(2)!=expect xo=(6), yo=(1)
+# ERROR at          22:xo=(2) yo=(2)!=expect xo=(7), yo=(1)
+# ERROR at          23:xo=(3) yo=(2)!=expect xo=(1), yo=(2)
+# ERROR at          24:xo=(4) yo=(2)!=expect xo=(2), yo=(2)
+# ERROR at          25:xo=(5) yo=(2)!=expect xo=(3), yo=(2)
+# ERROR at          26:xo=(6) yo=(2)!=expect xo=(4), yo=(2)
+# ERROR at          27:xo=(7) yo=(2)!=expect xo=(1), yo=(3)
+# ---------------------------------------------
+# There are          28 errors!
+# ---------------------------------------------
+# ---------------------------------------------
+# Total delay:       57000 ns
+# ---------------------------------------------
+# ** Note: $finish    : C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(146)
+#    Time: 5900 ns  Iteration: 1  Instance: /test
+# 1
+# Break in Module test at C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v line 146
+# Compile of testfixture.v was successful.
+# Compile of triangle.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart -f
+# Closing VCD file "dump.vcd"
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.test
+# Loading work.test
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.triangle
+# Loading work.triangle
+run -all
+# ** Error: (vsim-PLI-3826) C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(40): $dumpfile : This task should be called prior to the $dumpvars
+# 
+# task.  The $dumpfile task will be ignored.
+# 
+#         Region: /test
+# 
+# ****** START to VERIFY the Triangel Rendering Enginen OPERATION ******
+# 
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(4, 1)
+# (x3, y3)=(1, 7)
+# ERROR at           4:xo=(2) yo=(2)!=expect xo=(1), yo=(2)
+# ERROR at           5:xo=(3) yo=(2)!=expect xo=(2), yo=(2)
+# ERROR at           6:xo=(4) yo=(2)!=expect xo=(3), yo=(2)
+# ERROR at           7:xo=(5) yo=(2)!=expect xo=(1), yo=(3)
+# ERROR at           8:xo=(6) yo=(2)!=expect xo=(2), yo=(3)
+# ERROR at           9:xo=(7) yo=(2)!=expect xo=(3), yo=(3)
+# ERROR at          10:xo=(0) yo=(2)!=expect xo=(1), yo=(4)
+# ERROR at          11:xo=(1) yo=(2)!=expect xo=(2), yo=(4)
+# ERROR at          12:xo=(2) yo=(2)!=expect xo=(1), yo=(5)
+# ERROR at          13:xo=(3) yo=(2)!=expect xo=(2), yo=(5)
+# ERROR at          14:xo=(4) yo=(2)!=expect xo=(1), yo=(6)
+# ERROR at          15:xo=(5) yo=(2)!=expect xo=(1), yo=(7)
+# ERROR at          16:xo=(6) yo=(2)!=expect xo=(1), yo=(1)
+# ERROR at          17:xo=(7) yo=(2)!=expect xo=(2), yo=(1)
+# ERROR at          18:xo=(0) yo=(2)!=expect xo=(3), yo=(1)
+# ERROR at          19:xo=(1) yo=(2)!=expect xo=(4), yo=(1)
+# ERROR at          20:xo=(2) yo=(2)!=expect xo=(5), yo=(1)
+# ERROR at          21:xo=(3) yo=(2)!=expect xo=(6), yo=(1)
+# ERROR at          22:xo=(4) yo=(2)!=expect xo=(7), yo=(1)
+# ERROR at          23:xo=(5) yo=(2)!=expect xo=(1), yo=(2)
+# ERROR at          24:xo=(6) yo=(2)!=expect xo=(2), yo=(2)
+# ERROR at          25:xo=(7) yo=(2)!=expect xo=(3), yo=(2)
+# ERROR at          26:xo=(0) yo=(2)!=expect xo=(4), yo=(2)
+# ERROR at          27:xo=(1) yo=(2)!=expect xo=(1), yo=(3)
+# ---------------------------------------------
+# There are          24 errors!
+# ---------------------------------------------
+# ---------------------------------------------
+# Total delay:       58000 ns
+# ---------------------------------------------
+# ** Note: $finish    : C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(146)
+#    Time: 6 us  Iteration: 1  Instance: /test
+# 1
+# Break in Module test at C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v line 146
+# Compile of testfixture.v was successful.
+# Compile of triangle.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart -f
+# Closing VCD file "dump.vcd"
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.test
+# Loading work.test
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.triangle
+# Loading work.triangle
+run -all
+# ** Error: (vsim-PLI-3826) C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(40): $dumpfile : This task should be called prior to the $dumpvars
+# 
+# task.  The $dumpfile task will be ignored.
+# 
+#         Region: /test
+# 
+# ****** START to VERIFY the Triangel Rendering Enginen OPERATION ******
+# 
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(4, 1)
+# (x3, y3)=(1, 7)
+# ERROR at           7:xo=(4) yo=(2)!=expect xo=(1), yo=(3)
+# ERROR at           8:xo=(5) yo=(2)!=expect xo=(2), yo=(3)
+# ERROR at           9:xo=(6) yo=(2)!=expect xo=(3), yo=(3)
+# ERROR at          10:xo=(7) yo=(2)!=expect xo=(1), yo=(4)
+# ERROR at          11:xo=(0) yo=(2)!=expect xo=(2), yo=(4)
+# ERROR at          12:xo=(1) yo=(2)!=expect xo=(1), yo=(5)
+# ERROR at          13:xo=(2) yo=(2)!=expect xo=(2), yo=(5)
+# ERROR at          14:xo=(3) yo=(2)!=expect xo=(1), yo=(6)
+# ERROR at          15:xo=(4) yo=(2)!=expect xo=(1), yo=(7)
+# ERROR at          16:xo=(5) yo=(2)!=expect xo=(1), yo=(1)
+# ERROR at          17:xo=(6) yo=(2)!=expect xo=(2), yo=(1)
+# ERROR at          18:xo=(7) yo=(2)!=expect xo=(3), yo=(1)
+# ERROR at          19:xo=(0) yo=(2)!=expect xo=(4), yo=(1)
+# ERROR at          20:xo=(1) yo=(2)!=expect xo=(5), yo=(1)
+# ERROR at          21:xo=(2) yo=(2)!=expect xo=(6), yo=(1)
+# ERROR at          22:xo=(3) yo=(2)!=expect xo=(7), yo=(1)
+# ERROR at          23:xo=(4) yo=(2)!=expect xo=(1), yo=(2)
+# ERROR at          24:xo=(5) yo=(2)!=expect xo=(2), yo=(2)
+# ERROR at          25:xo=(6) yo=(2)!=expect xo=(3), yo=(2)
+# ERROR at          26:xo=(7) yo=(2)!=expect xo=(4), yo=(2)
+# ERROR at          27:xo=(0) yo=(2)!=expect xo=(1), yo=(3)
+# ---------------------------------------------
+# There are          21 errors!
+# ---------------------------------------------
+# ---------------------------------------------
+# Total delay:       58000 ns
+# ---------------------------------------------
+# ** Note: $finish    : C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(146)
+#    Time: 6 us  Iteration: 1  Instance: /test
+# 1
+# Break in Module test at C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v line 146
+# Compile of testfixture.v was successful.
+# Compile of triangle.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart -f
+# Closing VCD file "dump.vcd"
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.test
+# Loading work.test
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.triangle
+# Loading work.triangle
+run -all
+# ** Error: (vsim-PLI-3826) C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(40): $dumpfile : This task should be called prior to the $dumpvars
+# 
+# task.  The $dumpfile task will be ignored.
+# 
+#         Region: /test
+# 
+# ****** START to VERIFY the Triangel Rendering Enginen OPERATION ******
+# 
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(4, 1)
+# (x3, y3)=(1, 7)
+# ERROR at           4:xo=(2) yo=(2)!=expect xo=(1), yo=(2)
+# ERROR at           5:xo=(3) yo=(2)!=expect xo=(2), yo=(2)
+# ERROR at           6:xo=(4) yo=(2)!=expect xo=(3), yo=(2)
+# ERROR at           7:xo=(5) yo=(2)!=expect xo=(1), yo=(3)
+# ERROR at           8:xo=(6) yo=(2)!=expect xo=(2), yo=(3)
+# ERROR at           9:xo=(7) yo=(2)!=expect xo=(3), yo=(3)
+# ERROR at          10:xo=(0) yo=(2)!=expect xo=(1), yo=(4)
+# ERROR at          11:xo=(1) yo=(2)!=expect xo=(2), yo=(4)
+# ERROR at          12:xo=(2) yo=(2)!=expect xo=(1), yo=(5)
+# ERROR at          13:xo=(3) yo=(2)!=expect xo=(2), yo=(5)
+# ERROR at          14:xo=(4) yo=(2)!=expect xo=(1), yo=(6)
+# ERROR at          15:xo=(5) yo=(2)!=expect xo=(1), yo=(7)
+# ERROR at          16:xo=(6) yo=(2)!=expect xo=(1), yo=(1)
+# ERROR at          17:xo=(7) yo=(2)!=expect xo=(2), yo=(1)
+# ERROR at          18:xo=(0) yo=(2)!=expect xo=(3), yo=(1)
+# ERROR at          19:xo=(1) yo=(2)!=expect xo=(4), yo=(1)
+# ERROR at          20:xo=(2) yo=(2)!=expect xo=(5), yo=(1)
+# ERROR at          21:xo=(3) yo=(2)!=expect xo=(6), yo=(1)
+# ERROR at          22:xo=(4) yo=(2)!=expect xo=(7), yo=(1)
+# ERROR at          23:xo=(5) yo=(2)!=expect xo=(1), yo=(2)
+# ERROR at          24:xo=(6) yo=(2)!=expect xo=(2), yo=(2)
+# ERROR at          25:xo=(7) yo=(2)!=expect xo=(3), yo=(2)
+# ERROR at          26:xo=(0) yo=(2)!=expect xo=(4), yo=(2)
+# ERROR at          27:xo=(1) yo=(2)!=expect xo=(1), yo=(3)
+# ---------------------------------------------
+# There are          24 errors!
+# ---------------------------------------------
+# ---------------------------------------------
+# Total delay:       58000 ns
+# ---------------------------------------------
+# ** Note: $finish    : C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(146)
+#    Time: 6 us  Iteration: 1  Instance: /test
+# 1
+# Break in Module test at C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v line 146
+# Compile of testfixture.v was successful.
+# Compile of triangle.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart -f
+# Closing VCD file "dump.vcd"
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.test
+# Loading work.test
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.triangle
+# Loading work.triangle
+run -all
+# ** Error: (vsim-PLI-3826) C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(40): $dumpfile : This task should be called prior to the $dumpvars
+# 
+# task.  The $dumpfile task will be ignored.
+# 
+#         Region: /test
+# 
+# ****** START to VERIFY the Triangel Rendering Enginen OPERATION ******
+# 
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(4, 1)
+# (x3, y3)=(1, 7)
+# ERROR at           7:xo=(4) yo=(2)!=expect xo=(1), yo=(3)
+# ERROR at           8:xo=(5) yo=(2)!=expect xo=(2), yo=(3)
+# ERROR at           9:xo=(6) yo=(2)!=expect xo=(3), yo=(3)
+# ERROR at          10:xo=(7) yo=(2)!=expect xo=(1), yo=(4)
+# ERROR at          11:xo=(0) yo=(2)!=expect xo=(2), yo=(4)
+# ERROR at          12:xo=(1) yo=(2)!=expect xo=(1), yo=(5)
+# ERROR at          13:xo=(2) yo=(2)!=expect xo=(2), yo=(5)
+# ERROR at          14:xo=(3) yo=(2)!=expect xo=(1), yo=(6)
+# ERROR at          15:xo=(4) yo=(2)!=expect xo=(1), yo=(7)
+# ERROR at          16:xo=(5) yo=(2)!=expect xo=(1), yo=(1)
+# ERROR at          17:xo=(6) yo=(2)!=expect xo=(2), yo=(1)
+# ERROR at          18:xo=(7) yo=(2)!=expect xo=(3), yo=(1)
+# ERROR at          19:xo=(0) yo=(2)!=expect xo=(4), yo=(1)
+# ERROR at          20:xo=(1) yo=(2)!=expect xo=(5), yo=(1)
+# ERROR at          21:xo=(2) yo=(2)!=expect xo=(6), yo=(1)
+# ERROR at          22:xo=(3) yo=(2)!=expect xo=(7), yo=(1)
+# ERROR at          23:xo=(4) yo=(2)!=expect xo=(1), yo=(2)
+# ERROR at          24:xo=(5) yo=(2)!=expect xo=(2), yo=(2)
+# ERROR at          25:xo=(6) yo=(2)!=expect xo=(3), yo=(2)
+# ERROR at          26:xo=(7) yo=(2)!=expect xo=(4), yo=(2)
+# ERROR at          27:xo=(0) yo=(2)!=expect xo=(1), yo=(3)
+# ---------------------------------------------
+# There are          21 errors!
+# ---------------------------------------------
+# ---------------------------------------------
+# Total delay:       58000 ns
+# ---------------------------------------------
+# ** Note: $finish    : C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(146)
+#    Time: 6 us  Iteration: 1  Instance: /test
+# 1
+# Break in Module test at C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v line 146
+# Compile of testfixture.v was successful.
+# Compile of triangle.v failed with 1 errors.
+# 2 compiles, 1 failed with 1 error. 
+# Compile of testfixture.v was successful.
+# Compile of triangle.v failed with 1 errors.
+# 2 compiles, 1 failed with 1 error. 
+# Compile of testfixture.v was successful.
+# Compile of triangle.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart -f
+# Closing VCD file "dump.vcd"
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.test
+# Loading work.test
+# Refreshing C:/Users/USER/Desktop/ic design/ICC 2006/work.triangle
+# Loading work.triangle
+run -all
+# ** Error: (vsim-PLI-3826) C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(40): $dumpfile : This task should be called prior to the $dumpvars
+# 
+# task.  The $dumpfile task will be ignored.
+# 
+#         Region: /test
+# 
+# ****** START to VERIFY the Triangel Rendering Enginen OPERATION ******
+# 
+# Waiting for the rendering operation of the triangle points with:
+# (x1, y1)=(1, 1)
+# (x2, y2)=(4, 1)
+# (x3, y3)=(1, 7)
+# ERROR at           4:xo=(1) yo=(4)!=expect xo=(1), yo=(2)
+# ERROR at           5:xo=(2) yo=(4)!=expect xo=(2), yo=(2)
+# ERROR at           6:xo=(3) yo=(4)!=expect xo=(3), yo=(2)
+# ERROR at           7:xo=(4) yo=(4)!=expect xo=(1), yo=(3)
+# ERROR at           8:xo=(5) yo=(4)!=expect xo=(2), yo=(3)
+# ERROR at           9:xo=(6) yo=(4)!=expect xo=(3), yo=(3)
+# ERROR at          10:xo=(7) yo=(4)!=expect xo=(1), yo=(4)
+# ERROR at          11:xo=(0) yo=(4)!=expect xo=(2), yo=(4)
+# ERROR at          12:xo=(1) yo=(4)!=expect xo=(1), yo=(5)
+# ERROR at          13:xo=(2) yo=(4)!=expect xo=(2), yo=(5)
+# ERROR at          14:xo=(3) yo=(4)!=expect xo=(1), yo=(6)
+# ERROR at          15:xo=(4) yo=(4)!=expect xo=(1), yo=(7)
+# ERROR at          16:xo=(5) yo=(4)!=expect xo=(1), yo=(1)
+# ERROR at          17:xo=(6) yo=(4)!=expect xo=(2), yo=(1)
+# ERROR at          18:xo=(7) yo=(4)!=expect xo=(3), yo=(1)
+# ERROR at          19:xo=(0) yo=(4)!=expect xo=(4), yo=(1)
+# ERROR at          20:xo=(1) yo=(4)!=expect xo=(5), yo=(1)
+# ERROR at          21:xo=(2) yo=(4)!=expect xo=(6), yo=(1)
+# ERROR at          22:xo=(3) yo=(4)!=expect xo=(7), yo=(1)
+# ERROR at          23:xo=(4) yo=(4)!=expect xo=(1), yo=(2)
+# ERROR at          24:xo=(5) yo=(4)!=expect xo=(2), yo=(2)
+# ERROR at          25:xo=(6) yo=(4)!=expect xo=(3), yo=(2)
+# ERROR at          26:xo=(7) yo=(4)!=expect xo=(4), yo=(2)
+# ERROR at          27:xo=(0) yo=(4)!=expect xo=(1), yo=(3)
+# ---------------------------------------------
+# There are          24 errors!
+# ---------------------------------------------
+# ---------------------------------------------
+# Total delay:       62000 ns
+# ---------------------------------------------
+# ** Note: $finish    : C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v(146)
+#    Time: 6400 ns  Iteration: 1  Instance: /test
+# 1
+# Break in Module test at C:/Users/USER/Desktop/ic design/ICC 2006/testfixture.v line 146
